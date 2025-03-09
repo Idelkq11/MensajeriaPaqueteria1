@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Domain", "MensajeriaPaqueteria.Domain\MensajeriaPaqueteria.Domain.csproj", "{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Infrastructure", "MensajeriaPaqueteria.Infrastructure\MensajeriaPaqueteria.Infrastructure.csproj", "{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Application", "MensajeriaPaqueteria.Application\MensajeriaPaqueteria.Application.csproj", "{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Api", "MensajeriaPaqueteria.Api\MensajeriaPaqueteria.Api.csproj", "{54C6CA59-723A-4561-80C6-17BFABDB3A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Web", "MensajeriaPaqueteria.Web\MensajeriaPaqueteria.Web.csproj", "{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A873142-9B0C-47FC-B582-3245B75FEE8C}
+	EndGlobalSection
+EndGlobal
