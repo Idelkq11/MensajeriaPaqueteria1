@@ -1,0 +1,17 @@
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.csproj.AssemblyReference.cache
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.AssemblyInfoInputs.cache
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.AssemblyInfo.cs
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.csproj.CoreCompileInputs.cache
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.deps.json
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.pdb
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Domain.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Domain.pdb
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.pdb
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\Mensajer.4624C783.Up2Date
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\refint\MensajeriaPaqueteria.Application.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.pdb
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\ref\MensajeriaPaqueteria.Application.dll
