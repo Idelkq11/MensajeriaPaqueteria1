@@ -1,1 +1,0 @@
-C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\obj\Debug\net8.0\staticwebassets.build.json
