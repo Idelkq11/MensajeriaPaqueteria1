@@ -45,7 +45,7 @@ namespace MensajeriaPaqueteria.Application.Services
                 existingEnvio.FechaEnvio = envio.FechaEnvio;
                 existingEnvio.FechaEntrega = envio.FechaEntrega;
                 existingEnvio.Estado = envio.Estado;
-                existingEnvio.RutaId = envio.RutaId;
+                
 
                 await _envioRepository.UpdateAsync(existingEnvio);
 

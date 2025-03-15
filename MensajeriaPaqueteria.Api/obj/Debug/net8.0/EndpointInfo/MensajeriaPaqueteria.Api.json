@@ -676,7 +676,6 @@
         "required": [
           "direccion",
           "nombre",
-          "paquetes",
           "telefono"
         ],
         "type": "object",
@@ -735,13 +734,6 @@
         "additionalProperties": false
       },
       "Envio": {
-        "required": [
-          "cliente",
-          "empleado",
-          "estado",
-          "paquete",
-          "ruta"
-        ],
         "type": "object",
         "properties": {
           "id": {
@@ -780,20 +772,14 @@
           "estado": {
             "type": "string",
             "nullable": true
-          },
-          "rutaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "ruta": {
-            "$ref": "#/components/schemas/Ruta"
           }
         },
         "additionalProperties": false
       },
       "Paquete": {
         "required": [
-          "envio",
+          "cliente",
+          "envios",
           "estado",
           "nombre",
           "peso"
@@ -820,7 +806,14 @@
             "type": "string",
             "nullable": true
           },
-          "envio": {
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "envios": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Envio"

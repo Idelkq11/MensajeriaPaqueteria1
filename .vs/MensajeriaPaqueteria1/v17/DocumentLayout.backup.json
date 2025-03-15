@@ -3,60 +3,248 @@
   "WorkspaceRootPath": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\mensajeriapaqueteria.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\mensajeriapaqueteria.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\migrations\\mensajeriapaqueteriadbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\migrations\\mensajeriapaqueteriadbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\mensajeriapaqueteria.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\mensajeriapaqueteria.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\envior\\enviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\envior\\enviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\envior\\ienviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\envior\\ienviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\data\\mensajeriapaqueteriadbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\data\\mensajeriapaqueteriadbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\mensajeriapaqueteria.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\mensajeriapaqueteria.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\rutar\\rutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\rutar\\rutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\clienter\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\clienter\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\mensajeriapaqueteria.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\mensajeriapaqueteria.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\envior\\enviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\envior\\enviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\empleador\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\empleador\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\clienter\\iclienterepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\clienter\\iclienterepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\mensajeriapaqueteria.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\mensajeriapaqueteria.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.application\\mensajeriapaqueteria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|solutionrelative:mensajeriapaqueteria.application\\mensajeriapaqueteria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\mensajeriapaqueteria.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\mensajeriapaqueteria.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\mensajeriapaqueteria.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\mensajeriapaqueteria.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\mensajeriapaqueteria.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\mensajeriapaqueteria.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.application\\services\\envioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|solutionrelative:mensajeriapaqueteria.application\\services\\envioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\empleador\\iempleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\empleador\\iempleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\data\\mensajeriapaqueteriadbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\data\\mensajeriapaqueteriadbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\envior\\ienviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\envior\\ienviorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\cliente.controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\cliente.controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\nuget.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\mensajeriapaqueteria.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\mensajeriapaqueteria.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acern\\AppData\\Local\\SourceServer\\dcc2d53ee0dfe45e3401ea0fcfcb12f4b05add7a935fa3772019e9fa6da6977b\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acern\\AppData\\Local\\SourceServer\\3e53cda5673e0189e801e57c707bdd3ce8742545d07406080cf3445f3cd900ca\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewscliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewscliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewscliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewscliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewscliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewscliente\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewscliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewscliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewsempleado\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewsempleado\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewsempleado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewsempleado\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewsempleado\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewsempleado\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\viewsempleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\viewsempleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\enviocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|solutionrelative:mensajeriapaqueteria.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}|MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -71,10 +259,6 @@
       "RelativeMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|solutionrelative:mensajeriapaqueteria.application\\services\\paqueteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.application\\services\\envioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|solutionrelative:mensajeriapaqueteria.application\\services\\envioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.application\\services\\empleadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|solutionrelative:mensajeriapaqueteria.application\\services\\empleadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,26 +269,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\envio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}|MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj|solutionrelative:mensajeriapaqueteria.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.api\\controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,36 +287,8 @@
       "RelativeMoniker": "D:0:0:{54C6CA59-723A-4561-80C6-17BFABDB3A07}|MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj|solutionrelative:mensajeriapaqueteria.api\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\rutar\\rutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\rutar\\rutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\empleador\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\empleador\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\clienter\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\clienter\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\rutar\\irutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\rutar\\irutarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\paqueter\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\clienter\\iclienterepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\clienter\\iclienterepository.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\repositories\\empleador\\iempleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\repositories\\empleador\\iempleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEE88B67-37BD-4FB5-8A36-7E8096AB9CFA}|MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.application\\dtos\\enviodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -181,6 +317,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|c:\\proyectomensajeriapaqueteria\\mensajeriapaqueteria1\\mensajeriapaqueteria.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6278D31-D4D2-4DCE-87EB-1C6E16BB9620}|MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj|solutionrelative:mensajeriapaqueteria.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MensajeriaPaqueteria.Infrastructure\\nuget.config||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -202,319 +342,144 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MensajeriaPaqueteria.Infrastructure.csproj",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T01:18:09.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EnvioRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:53:37.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEnvioRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T20:06:21.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:51:44.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MensajeriaPaqueteria.Web.csproj",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-09T22:06:11.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "MensajeriaPaqueteriaDbcontex.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
               "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
               "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T20:33:13.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T20:33:13.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:51:11.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MensajeriaPaqueteriaDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\MensajeriaPaqueteriaDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\MensajeriaPaqueteriaDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\MensajeriaPaqueteriaDbContextModelSnapshot.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\MensajeriaPaqueteriaDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:41:09.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MensajeriaPaqueteria.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\MensajeriaPaqueteria.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T01:18:09.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Program.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Program.cs",
               "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Program.cs",
               "RelativeToolTip": "MensajeriaPaqueteria.Api\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T20:50:23.772Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MensajeriaPaqueteria.Api.http",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-10T00:20:44.755Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\appsettings.json",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.json",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-10T02:28:35.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\appsettings.Development.json",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.Development.json",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-10T01:17:00.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\appsettings.json",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.json",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-09T20:44:23.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiServices.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "20250315042557_Fix_PaqueteIdRelation.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250315042557_Fix_PaqueteIdRelation.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:03:35.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T04:25:57.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MensajeriaPaqueteria.Api.csproj",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-10T01:30:37.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Program.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Program.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Program.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PaqueteRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAArwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:49:50.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T00:27:14.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EmpleadoService.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABBAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RutaRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:14:14.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T22:34:41.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T01:23:47.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EnvioService.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:16:00.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RutaService.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:15:22.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PaqueteService.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:14:56.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:13:52.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Envio.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:46:58.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:46:40.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 4,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Cliente.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Cliente.cs",
               "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Cliente.cs",
               "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:46:02.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T18:46:02.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Paquete.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:47:13.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T18:46:40.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 10,
+              "Title": "Envio.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Envio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:46:58.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Ruta.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Ruta.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Ruta.cs",
@@ -522,142 +487,23 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Ruta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:48:09.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T18:48:09.044Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Class1.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Class1.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Paquete.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Entities\\Paquete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T16:57:15.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T18:47:13.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RutaController.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:54:24.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PaqueteController.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:53:41.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EnvioController.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:54:07.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:16:14.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RutaRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\RutaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T22:34:41.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PaqueteRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\PaqueteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T00:27:14.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "EmpleadoRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:52:28.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\ClienteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:51:11.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IRutaRepository.cs",
-              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
-              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
-              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
-              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:56:10.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 13,
               "Title": "IPaqueteRepository.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\IPaqueteRepository.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\IPaqueteRepository.cs",
@@ -665,25 +511,131 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\PaqueteR\\IPaqueteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T00:28:58.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T00:28:58.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 14,
+              "Title": "EnvioRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\EnvioRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:53:37.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmpleadoRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\EmpleadoRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:52:28.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "IClienteRepository.cs.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\IClienteRepository.cs.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\IClienteRepository.cs.cs",
               "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\IClienteRepository.cs.cs",
               "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\ClienteR\\IClienteRepository.cs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:51:58.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T19:51:58.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 18,
+              "Title": "MensajeriaPaqueteria.Application.csproj",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\MensajeriaPaqueteria.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-11T23:48:52.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MensajeriaPaqueteria.Domain.csproj",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj",
+              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\MensajeriaPaqueteria.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-11T23:48:56.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MensajeriaPaqueteria.Api.csproj",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T01:30:37.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Program.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Program.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T21:49:50.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EnvioService.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\EnvioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:16:00.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\appsettings.json",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.json",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T22:25:50.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MensajeriaPaqueteria.Api.http",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-10T00:20:44.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "IEmpleadoRepository.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\IEmpleadoRepository.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\IEmpleadoRepository.cs",
@@ -691,12 +643,598 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EmpleadoR\\IEmpleadoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:53:01.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T19:53:01.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MensajeriaPaqueteriaDbContextFactory.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbContextFactory.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbContextFactory.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbContextFactory.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:00:41.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250313035301_Cliente.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313035301_Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T03:53:01.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250313034350_Cliente.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250313034350_Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T03:43:50.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IEnvioRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\EnvioR\\IEnvioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T20:06:21.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250312072719_Cliente.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312072719_Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:27:19.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250312071632_Cliente.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312071632_Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:16:33.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250312065310_PendingChanges.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312065310_PendingChanges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:53:10.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250312062743_ClienteUpdate.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312062743_ClienteUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:27:44.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\appsettings.json",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.json",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-09T20:44:23.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250312060839_NombreDeLaMigracion.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Migrations\\20250312060839_NombreDeLaMigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T06:08:40.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Cliente.Controller.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\Cliente.Controller.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\Cliente.Controller.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\Cliente.Controller.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\Cliente.Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:45:03.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\appsettings.Development.json",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T22:35:55.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T04:55:48.01Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
+              "Title": "nuget.config",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-12T00:10:01.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "nuget.config",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\nuget.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-11T23:23:27.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAGIJAAAAAAAAAAAvwHcJAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-11T23:29:08.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Microsoft.NET.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeToolTip": "..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAvwEIBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-11T23:49:47.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MensajeriaPaqueteria.Web.csproj",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T22:06:11.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T21:51:44.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Create.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Create.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Create.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:01:17.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "MensajeriaPaqueteriaDbcontex.cs",
+              "DocumentMoniker": "C:\\Users\\acern\\AppData\\Local\\SourceServer\\3e53cda5673e0189e801e57c707bdd3ce8742545d07406080cf3445f3cd900ca\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
+              "RelativeDocumentMoniker": "..\\..\\Users\\acern\\AppData\\Local\\SourceServer\\3e53cda5673e0189e801e57c707bdd3ce8742545d07406080cf3445f3cd900ca\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
+              "ToolTip": "C:\\Users\\acern\\AppData\\Local\\SourceServer\\3e53cda5673e0189e801e57c707bdd3ce8742545d07406080cf3445f3cd900ca\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
+              "RelativeToolTip": "..\\..\\Users\\acern\\AppData\\Local\\SourceServer\\3e53cda5673e0189e801e57c707bdd3ce8742545d07406080cf3445f3cd900ca\\MensajeriaPaqueteria.Infrastructure\\Data\\MensajeriaPaqueteriaDbcontex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T22:54:16.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\acern\\AppData\\Local\\SourceServer\\dcc2d53ee0dfe45e3401ea0fcfcb12f4b05add7a935fa3772019e9fa6da6977b\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Users\\acern\\AppData\\Local\\SourceServer\\dcc2d53ee0dfe45e3401ea0fcfcb12f4b05add7a935fa3772019e9fa6da6977b\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\acern\\AppData\\Local\\SourceServer\\dcc2d53ee0dfe45e3401ea0fcfcb12f4b05add7a935fa3772019e9fa6da6977b\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "RelativeToolTip": "..\\..\\Users\\acern\\AppData\\Local\\SourceServer\\dcc2d53ee0dfe45e3401ea0fcfcb12f4b05add7a935fa3772019e9fa6da6977b\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T22:55:12.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T21:51:46.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Index.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Index.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:00:37.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Edit.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Edit.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:01:36.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RutaController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\RutaController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\RutaController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\RutaController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\RutaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:49:49.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Delete.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Delete.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsCliente\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:02:03.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Index.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Index.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Index.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:02:23.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Create.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Create.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Create.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:03:01.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Edit.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Edit.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:03:19.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Delete.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Delete.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\ViewsEmpleado\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T22:03:36.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PaqueteController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\PaqueteController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\PaqueteController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\PaqueteController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\PaqueteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:48:31.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "EnvioController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\EnvioController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\EnvioController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\EnvioController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\EnvioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:47:20.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ApiServices.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\services\\ApiServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:03:35.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:45:54.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T21:46:50.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:51:44.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\appsettings.Development.json",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\appsettings.Development.json",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T01:17:00.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "EmpleadoService.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\EmpleadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:14:14.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MensajeriaPaqueteria.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T01:23:47.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "RutaService.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\RutaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:15:22.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PaqueteService.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\PaqueteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:14:56.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Application\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:13:52.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Domain\\Class1.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Domain\\Class1.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T16:57:15.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "RutaController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\RutaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:54:24.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "PaqueteController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\PaqueteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:53:41.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "EnvioController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\EnvioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:54:07.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Api\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:16:14.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "IRutaRepository.cs",
+              "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
+              "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
+              "ToolTip": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
+              "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Repositories\\RutaR\\IRutaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T19:56:10.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
               "Title": "EnvioDto.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Dtos\\EnvioDto.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Dtos\\EnvioDto.cs",
@@ -704,12 +1242,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Dtos\\EnvioDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:09:45.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:09:45.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 74,
               "Title": "ClienteDto.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Dtos\\ClienteDto.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Dtos\\ClienteDto.cs",
@@ -717,12 +1254,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Dtos\\ClienteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:09:00.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:09:00.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 75,
               "Title": "RutaDto.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Dtos\\RutaDto.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Dtos\\RutaDto.cs",
@@ -730,12 +1266,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Dtos\\RutaDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:10:30.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:10:30.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 76,
               "Title": "PaqueteDto.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Dtos\\PaqueteDto.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Dtos\\PaqueteDto.cs",
@@ -743,12 +1278,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Dtos\\PaqueteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:10:07.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:10:07.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 77,
               "Title": "EmpleadoDto.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Dtos\\EmpleadoDto.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Dtos\\EmpleadoDto.cs",
@@ -756,12 +1290,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Dtos\\EmpleadoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:09:21.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:09:21.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 78,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Application\\Class1.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Application\\Class1.cs",
@@ -769,12 +1302,11 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Application\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:00:45.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T17:00:45.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 79,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "MensajeriaPaqueteria.Infrastructure\\Class1.cs",
@@ -782,8 +1314,7 @@
               "RelativeToolTip": "MensajeriaPaqueteria.Infrastructure\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T16:58:28.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T16:58:28.888Z"
             }
           ]
         }

@@ -9,6 +9,7 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infra
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.AssemblyInfoInputs.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.AssemblyInfo.cs
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.csproj.CoreCompileInputs.cache
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.sourcelink.json
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\Mensajer.A2096F14.Up2Date
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\MensajeriaPaqueteria.Infrastructure.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Infrastructure\obj\Debug\net8.0\refint\MensajeriaPaqueteria.Infrastructure.dll

@@ -15,7 +15,7 @@ internal class Program
 
         // Registrar DbContext con la cadena de conexión
         builder.Services.AddDbContext<MensajeriaPaqueteriaDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("MensajeriaPaqueteriaDbs")));
 
         // Registrar Repositorios
         builder.Services.AddScoped<IClienteRepository, ClienteRepository>();

@@ -36,6 +36,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsCliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NDbGllbnRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsCliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NDbGllbnRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsCliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NDbGllbnRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsCliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NDbGllbnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsEmpleado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NFbXBsZWFkb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsEmpleado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NFbXBsZWFkb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsEmpleado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NFbXBsZWFkb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/ViewsEmpleado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NFbXBsZWFkb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MensajeriaPaqueteria.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ac8efbe7026a2a8de2a8a012e891f8082323098")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6075d0830a1e293491aca37953f1edc68a33193d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MensajeriaPaqueteria.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MensajeriaPaqueteria.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

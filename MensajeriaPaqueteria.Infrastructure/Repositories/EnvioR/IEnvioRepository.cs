@@ -7,7 +7,7 @@
     public interface IEnvioRepository
     {
         Task<IEnumerable<Envio>> GetAllAsync();
-        Task<Envio> GetByIdAsync(int id);
+        Task<Envio?> GetByIdAsync(int id);
         Task AddAsync(Envio envio);
         Task UpdateAsync(Envio envio);
         Task DeleteAsync(int id);

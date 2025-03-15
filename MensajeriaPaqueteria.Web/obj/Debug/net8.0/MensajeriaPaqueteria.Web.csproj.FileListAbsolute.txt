@@ -21,6 +21,7 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\b
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -86,6 +87,7 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\o
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.RazorAssemblyInfo.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.RazorAssemblyInfo.cs
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.sourcelink.json
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\scopedcss\bundle\MensajeriaPaqueteria.Web.styles.css
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\scopedcss\projectbundle\MensajeriaPaqueteria.Web.bundle.scp.css
@@ -98,10 +100,10 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\o
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MensajeriaPaqueteria.Web.props
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MensajeriaPaqueteria.Web.props
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\staticwebassets.pack.json
-C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\Mensajer.D087622A.Up2Date
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\refint\MensajeriaPaqueteria.Web.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.pdb
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\MensajeriaPaqueteria.Web.genruntimeconfig.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\ref\MensajeriaPaqueteria.Web.dll
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
