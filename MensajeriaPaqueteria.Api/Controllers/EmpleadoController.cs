@@ -1,59 +1,87 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MensajeriaPaqueteria.Domain.Entities;
-using MensajeriaPaqueteria.Infrastructure.Repositories;
+﻿using MensajeriaPaqueteria.Domain.Entities;
+using MensajeriaPaqueteria.Infrastructure.Repositories.EmpleadoR;
+using MensajeriaPaqueteria.Api.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MensajeriaPaqueteria.Infrastructure.Repositories.EmpleadoR;
 
 namespace MensajeriaPaqueteria.Api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class EmpleadosController(IEmpleadoRepository empleadoRepository) : ControllerBase
+    [Route("api/[controller]")]
+    public class EmpleadoController : ControllerBase
     {
-        private readonly IEmpleadoRepository _empleadoRepository = empleadoRepository;
+        private readonly IEmpleadoRepository _empleadoRepository;
+
+        public EmpleadoController(IEmpleadoRepository empleadoRepository)
+        {
+            _empleadoRepository = empleadoRepository;
+        }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<IEnumerable<EmpleadoViewModel>>> GetAll()
         {
             var empleados = await _empleadoRepository.GetAllAsync();
-            return Ok(empleados);
+            var empleadosViewModel = empleados.Select(e => new EmpleadoViewModel
+            {
+                Id = e.Id,
+                Nombre = e.Nombre,
+                Cargo = e.Cargo,
+                Telefono = e.Telefono
+            });
+            return Ok(empleadosViewModel);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<ActionResult<EmpleadoViewModel>> GetById(int id)
         {
             var empleado = await _empleadoRepository.GetByIdAsync(id);
             if (empleado == null) return NotFound();
-            return Ok(empleado);
+            var empleadoViewModel = new EmpleadoViewModel
+            {
+                Id = empleado.Id,
+                Nombre = empleado.Nombre,
+                Cargo = empleado.Cargo,
+                Telefono = empleado.Telefono
+            };
+            return Ok(empleadoViewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Empleado empleado)
+        public async Task<ActionResult> Create(EmpleadoViewModel empleadoViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-
+            var empleado = new Empleado
+            {
+                Nombre = empleadoViewModel.Nombre,
+                Cargo = empleadoViewModel.Cargo,
+                Telefono = empleadoViewModel.Telefono
+            };
             await _empleadoRepository.AddAsync(empleado);
-            return CreatedAtAction(nameof(GetById), new { id = empleado.Id }, empleado);
+            return CreatedAtAction(nameof(GetById), new { id = empleado.Id }, empleadoViewModel);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Empleado empleado)
+        public async Task<ActionResult> Update(int id, EmpleadoViewModel empleadoViewModel)
         {
-            if (id != empleado.Id) return BadRequest();
+            if (id != empleadoViewModel.Id) return BadRequest();
+
+            var empleado = new Empleado
+            {
+                Id = empleadoViewModel.Id,
+                Nombre = empleadoViewModel.Nombre,
+                Cargo = empleadoViewModel.Cargo,
+                Telefono = empleadoViewModel.Telefono
+            };
+
             await _empleadoRepository.UpdateAsync(empleado);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var empleado = await _empleadoRepository.GetByIdAsync(id);
-            if (empleado == null) return NotFound();
-
             await _empleadoRepository.DeleteAsync(id);
             return NoContent();
         }
     }
 }
-

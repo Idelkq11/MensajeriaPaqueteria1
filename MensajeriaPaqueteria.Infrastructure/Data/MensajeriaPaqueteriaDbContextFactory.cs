@@ -8,7 +8,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Data
         public MensajeriaPaqueteriaDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MensajeriaPaqueteriaDbContext>();
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MensajeriaPaqueteriaDbs;Trusted_Connection=True;TrustServerCertificate=True;"); // Usa tu cadena de conexión aquí
+            optionsBuilder.UseSqlServer("Server=IDELKQ11\\SQLEXPRESS;Database=MensajeriaPaqueteriaDbs;Trusted_Connection=True;TrustServerCertificate=True;"); // Usa tu cadena de conexión aquí
 
             return new MensajeriaPaqueteriaDbContext(optionsBuilder.Options);
         }

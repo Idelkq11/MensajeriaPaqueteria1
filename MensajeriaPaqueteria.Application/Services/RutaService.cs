@@ -7,18 +7,18 @@ namespace MensajeriaPaqueteria.Application.Services
 {
     public class RutaService(IRutaRepository rutaRepository) : RutaService.IRutaService
     {
-        private readonly IRutaRepository _rutaRepository = rutaRepository;
+        private readonly IRutaRepository _RutaRepository = rutaRepository;
 
         // Obtener todas las rutas
         public async Task<IEnumerable<Ruta>> GetAllAsync()
         {
-            return await _rutaRepository.GetAllAsync();
+            return await _RutaRepository.GetAllAsync();
         }
 
         // Obtener una ruta por ID
         public async Task<Ruta?> GetByIdAsync(int id)
         {
-            return await _rutaRepository.GetByIdAsync(id);
+            return await _RutaRepository.GetByIdAsync(id);
         }
 
         // Crear una nueva ruta
@@ -27,7 +27,7 @@ namespace MensajeriaPaqueteria.Application.Services
             try
             {
                 // Llamamos al repositorio para agregar la nueva ruta
-                await _rutaRepository.AddAsync(ruta);
+                await _RutaRepository.AddAsync(ruta);
                 return "Ruta creada exitosamente.";
             }
             catch (Exception ex)
@@ -43,7 +43,7 @@ namespace MensajeriaPaqueteria.Application.Services
             try
             {
                 // Verificamos si la ruta existe
-                var existingRuta = await _rutaRepository.GetByIdAsync(id);
+                var existingRuta = await _RutaRepository.GetByIdAsync(id);
 
                 if (existingRuta == null)
                     return $"Ruta con ID {id} no encontrada.";
@@ -54,7 +54,7 @@ namespace MensajeriaPaqueteria.Application.Services
                 existingRuta.Distancia = ruta.Distancia;
 
                 // Llamamos al repositorio para actualizar la ruta
-                await _rutaRepository.UpdateAsync(existingRuta);
+                await _RutaRepository.UpdateAsync(existingRuta);
                 return "Ruta actualizada exitosamente.";
             }
             catch (Exception ex)
@@ -68,12 +68,12 @@ namespace MensajeriaPaqueteria.Application.Services
         {
             try
             {
-                var ruta = await _rutaRepository.GetByIdAsync(id);
+                var ruta = await _RutaRepository.GetByIdAsync(id);
 
                 if (ruta == null)
                     return $"Ruta con ID {id} no encontrada.";
 
-                await _rutaRepository.DeleteAsync(id);
+                await _RutaRepository.DeleteAsync(id);
                 return "Ruta eliminada exitosamente.";
             }
             catch (Exception ex)

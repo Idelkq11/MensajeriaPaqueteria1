@@ -2,7 +2,6 @@
 
 namespace MensajeriaPaqueteria.Domain.Entities
 {
-    [Table("Envio", Schema = "dbo")]
     public class Envio
     {
         public int Id { get; set; }
@@ -22,7 +21,8 @@ namespace MensajeriaPaqueteria.Domain.Entities
         public DateTime FechaEnvio { get; set; }
         public DateTime FechaEntrega { get; set; }
         public string? Estado { get; set; }
-
+        
 
     }
 }
+

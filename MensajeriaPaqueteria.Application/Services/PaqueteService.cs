@@ -41,7 +41,7 @@ namespace MensajeriaPaqueteria.Application.Services
                 if (existingPaquete == null)
                     return $"Paquete con ID {id} no encontrado.";
 
-                existingPaquete.Nombre = paquete.Nombre; // Actualiza el nombre
+                
                 existingPaquete.Peso = paquete.Peso; // Actualiza el peso
                 existingPaquete.Descripcion = paquete.Descripcion; // Actualiza la descripción
 

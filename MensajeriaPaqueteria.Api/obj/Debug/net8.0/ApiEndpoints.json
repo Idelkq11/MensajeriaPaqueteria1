@@ -1,34 +1,44 @@
 [
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClientesController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClienteController",
     "Method": "GetAll",
-    "RelativePath": "api/Clientes",
+    "RelativePath": "api/Cliente",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MensajeriaPaqueteria.Api.Models.ClienteViewModel, MensajeriaPaqueteria.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClientesController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClienteController",
     "Method": "Create",
-    "RelativePath": "api/Clientes",
+    "RelativePath": "api/Cliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cliente",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Cliente",
+        "Name": "clienteViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.ClienteViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClientesController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClienteController",
     "Method": "GetById",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -39,12 +49,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "MensajeriaPaqueteria.Api.Models.ClienteViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClientesController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClienteController",
     "Method": "Update",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -55,17 +75,17 @@
         "IsRequired": true
       },
       {
-        "Name": "cliente",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Cliente",
+        "Name": "clienteViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.ClienteViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClientesController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.ClienteController",
     "Method": "Delete",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "api/Cliente/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -79,35 +99,45 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadoController",
     "Method": "GetAll",
-    "RelativePath": "api/Empleados",
+    "RelativePath": "api/Empleado",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MensajeriaPaqueteria.Api.Models.EmpleadoViewModel, MensajeriaPaqueteria.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadoController",
     "Method": "Create",
-    "RelativePath": "api/Empleados",
+    "RelativePath": "api/Empleado",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "empleado",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Empleado",
+        "Name": "empleadoViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.EmpleadoViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadoController",
     "Method": "GetById",
-    "RelativePath": "api/Empleados/{id}",
+    "RelativePath": "api/Empleado/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -118,12 +148,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "MensajeriaPaqueteria.Api.Models.EmpleadoViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadoController",
     "Method": "Update",
-    "RelativePath": "api/Empleados/{id}",
+    "RelativePath": "api/Empleado/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -134,17 +174,17 @@
         "IsRequired": true
       },
       {
-        "Name": "empleado",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Empleado",
+        "Name": "empleadoViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.EmpleadoViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EmpleadoController",
     "Method": "Delete",
-    "RelativePath": "api/Empleados/{id}",
+    "RelativePath": "api/Empleado/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -158,35 +198,45 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnviosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnvioController",
     "Method": "GetAll",
-    "RelativePath": "api/Envios",
+    "RelativePath": "api/Envio",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MensajeriaPaqueteria.Api.Models.EnvioViewModel, MensajeriaPaqueteria.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnviosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnvioController",
     "Method": "Create",
-    "RelativePath": "api/Envios",
+    "RelativePath": "api/Envio",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "envio",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Envio",
+        "Name": "envioViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.EnvioViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnviosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnvioController",
     "Method": "GetById",
-    "RelativePath": "api/Envios/{id}",
+    "RelativePath": "api/Envio/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -197,12 +247,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "MensajeriaPaqueteria.Api.Models.EnvioViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnviosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnvioController",
     "Method": "Update",
-    "RelativePath": "api/Envios/{id}",
+    "RelativePath": "api/Envio/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -213,17 +273,17 @@
         "IsRequired": true
       },
       {
-        "Name": "envio",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Envio",
+        "Name": "envioViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.EnvioViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnviosController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.EnvioController",
     "Method": "Delete",
-    "RelativePath": "api/Envios/{id}",
+    "RelativePath": "api/Envio/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -244,7 +304,17 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MensajeriaPaqueteria.Api.Models.PaqueteViewModel, MensajeriaPaqueteria.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "MensajeriaPaqueteria.Api.Controllers.PaquetesController",
@@ -255,8 +325,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "paquete",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Paquete",
+        "Name": "paqueteViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.PaqueteViewModel",
         "IsRequired": true
       }
     ],
@@ -276,7 +346,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "MensajeriaPaqueteria.Api.Models.PaqueteViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "MensajeriaPaqueteria.Api.Controllers.PaquetesController",
@@ -292,8 +372,8 @@
         "IsRequired": true
       },
       {
-        "Name": "paquete",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Paquete",
+        "Name": "paqueteViewModel",
+        "Type": "MensajeriaPaqueteria.Api.Models.PaqueteViewModel",
         "IsRequired": true
       }
     ],
@@ -316,35 +396,45 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutasController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutaController",
     "Method": "GetAll",
-    "RelativePath": "api/Rutas",
+    "RelativePath": "api/Ruta",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MensajeriaPaqueteria.Domain.Entities.RutaViewModel, MensajeriaPaqueteria.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutasController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutaController",
     "Method": "Create",
-    "RelativePath": "api/Rutas",
+    "RelativePath": "api/Ruta",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ruta",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Ruta",
+        "Name": "rutaViewModel",
+        "Type": "MensajeriaPaqueteria.Domain.Entities.RutaViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutasController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutaController",
     "Method": "GetById",
-    "RelativePath": "api/Rutas/{id}",
+    "RelativePath": "api/Ruta/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -355,12 +445,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "MensajeriaPaqueteria.Domain.Entities.RutaViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutasController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutaController",
     "Method": "Update",
-    "RelativePath": "api/Rutas/{id}",
+    "RelativePath": "api/Ruta/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -371,17 +471,17 @@
         "IsRequired": true
       },
       {
-        "Name": "ruta",
-        "Type": "MensajeriaPaqueteria.Domain.Entities.Ruta",
+        "Name": "rutaViewModel",
+        "Type": "MensajeriaPaqueteria.Domain.Entities.RutaViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutasController",
+    "ContainingType": "MensajeriaPaqueteria.Api.Controllers.RutaController",
     "Method": "Delete",
-    "RelativePath": "api/Rutas/{id}",
+    "RelativePath": "api/Ruta/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

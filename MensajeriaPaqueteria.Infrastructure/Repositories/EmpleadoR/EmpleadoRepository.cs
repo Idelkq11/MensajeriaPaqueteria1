@@ -12,32 +12,32 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.EmpleadoR
 
         public async Task<IEnumerable<Empleado>> GetAllAsync()
         {
-            return await _context.Empleado.ToListAsync();
+            return await _context.Empleados.ToListAsync();
         }
 
         public async Task<Empleado?> GetByIdAsync(int id)
         {
-            return await _context.Empleado.FindAsync(id);
+            return await _context.Empleados.FindAsync(id);
         }
 
         public async Task AddAsync(Empleado empleado)
         {
-            await _context.Empleado.AddAsync(empleado);
+            await _context.Empleados.AddAsync(empleado);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Empleado empleado)
         {
-            _context.Empleado.Update(empleado);
+            _context.Empleados.Update(empleado);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
-            var empleado = await _context.Empleado.FindAsync(id);
+            var empleado = await _context.Empleados.FindAsync(id);
             if (empleado != null)
             {
-                _context.Empleado.Remove(empleado);
+                _context.Empleados.Remove(empleado);
                 await _context.SaveChangesAsync();
             }
         }

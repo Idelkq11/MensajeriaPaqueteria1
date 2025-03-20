@@ -1,55 +1,111 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MensajeriaPaqueteria.Domain.Entities;
-using MensajeriaPaqueteria.Infrastructure.Repositories;
+using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
+using MensajeriaPaqueteria.Api.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
 
 namespace MensajeriaPaqueteria.Api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class PaquetesController(IPaqueteRepository paqueteRepository) : ControllerBase
-    {
-        private readonly IPaqueteRepository _paqueteRepository = paqueteRepository;
+    [Route("api/[controller]")]
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+    public class PaquetesController : ControllerBase
+    {
+        private readonly IPaqueteRepository _paqueteRepository;
+
+        public PaquetesController(IPaqueteRepository paqueteRepository)
         {
-            var paquetes = await _paqueteRepository.GetAllAsync();
-            return Ok(paquetes);
+            _paqueteRepository = paqueteRepository;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PaqueteViewModel>>> GetAll()
+        {
+            var paquetes = await _paqueteRepository.GetAllAsync();
+            var paquetesViewModel = paquetes.Select(p => new PaqueteViewModel
+            {
+
+                Id = p.Id,
+                Nombre = p.Nombre,
+                Peso = p.Peso,
+                Estado = p.Estado,
+                Descripcion = p.Descripcion,
+                ClienteId = p.ClienteId,
+
+            });
+
+            return Ok(paquetesViewModel);
+        }
+    
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<ActionResult<PaqueteViewModel>> GetById(int id)
         {
             var paquete = await _paqueteRepository.GetByIdAsync(id);
             if (paquete == null) return NotFound();
-            return Ok(paquete);
+
+            var paqueteViewModel = new PaqueteViewModel
+            {
+
+                Id = paquete.Id,
+                Nombre = paquete.Nombre,
+                Peso = paquete.Peso,
+                Estado = paquete.Estado,
+                Descripcion = paquete.Descripcion,
+                ClienteId = paquete.ClienteId,
+
+
+            };
+
+
+            return Ok(paqueteViewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Paquete paquete)
+        public async Task<IActionResult> Create(PaqueteViewModel paqueteViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            
+
+            var paquete = new Paquete
+            {
+                Nombre = paqueteViewModel.Nombre,
+                Peso = paqueteViewModel.Peso,
+                Estado = paqueteViewModel.Estado,
+                Descripcion = paqueteViewModel.Descripcion,
+                ClienteId = paqueteViewModel.ClienteId,
+            };
 
             await _paqueteRepository.AddAsync(paquete);
-            return CreatedAtAction(nameof(GetById), new { id = paquete.Id }, paquete);
+            return CreatedAtAction(nameof(GetById), new { id = paquete.Id }, paqueteViewModel);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Paquete paquete)
+        public async Task<IActionResult> Update(int id, PaqueteViewModel paqueteViewModel)
         {
-            if (id != paquete.Id) return BadRequest();
+            if (id !=paqueteViewModel.Id) return BadRequest();
+
+            var paquete = new Paquete
+            {
+                Id = paqueteViewModel.Id,
+                Nombre = paqueteViewModel.Nombre,
+                Peso = paqueteViewModel.Peso,
+                Estado = paqueteViewModel.Estado,
+                Descripcion = paqueteViewModel.Descripcion,
+                ClienteId = paqueteViewModel.ClienteId,
+
+
+            };
+           
+
             await _paqueteRepository.UpdateAsync(paquete);
-            return NoContent();
+            return CreatedAtAction(nameof(GetById), new { id = paquete.Id }, paqueteViewModel);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var paquete = await _paqueteRepository.GetByIdAsync(id);
-            if (paquete == null) return NotFound();
+            if (paquete == null) return NotFound($"Paquete con ID {id} no encontrado.");
 
             await _paqueteRepository.DeleteAsync(id);
             return NoContent();

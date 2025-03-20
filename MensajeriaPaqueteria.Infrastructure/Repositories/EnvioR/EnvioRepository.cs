@@ -12,14 +12,14 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR
 
         public async Task<IEnumerable<Envio>> GetAllAsync()
         {
-            return await _context.Envio
+            return await _context.Envios
                 .Include(e => e.Paquete) // Incluye los datos del Paquete relacionado
                 .ToListAsync();
         }
 
         public async Task<Envio?> GetByIdAsync(int id)
         {
-            return await _context.Envio
+            return await _context.Envios
                 .Include(e => e.Paquete) // Incluye el Paquete relacionado
                 
                 .FirstOrDefaultAsync(e => e.Id == id); // Ejecuta la consulta
@@ -28,25 +28,26 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR
 
         public async Task AddAsync(Envio envio)
         {
-            await _context.Envio.AddAsync(envio);
+            await _context.Envios.AddAsync(envio);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Envio envio)
         {
-            _context.Envio.Update(envio);
+            _context.Envios.Update(envio);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
-            var envio = await _context.Envio.FindAsync(id);
+            var envio = await _context.Envios.FindAsync(id);
             if (envio != null)
             {
-                _context.Envio.Remove(envio);
+                _context.Envios.Remove(envio);
                 await _context.SaveChangesAsync();
             }
         }
     }
 }
+
 

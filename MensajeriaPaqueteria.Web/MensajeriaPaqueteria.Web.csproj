@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MensajeriaPaqueteria.Api\MensajeriaPaqueteria.Api.csproj" />
     <ProjectReference Include="..\MensajeriaPaqueteria.Domain\MensajeriaPaqueteria.Domain.csproj" />
     <ProjectReference Include="..\MensajeriaPaqueteria.Infrastructure\MensajeriaPaqueteria.Infrastructure.csproj" />

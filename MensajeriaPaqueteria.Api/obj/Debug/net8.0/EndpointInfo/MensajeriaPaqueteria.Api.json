@@ -5,36 +5,62 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Clientes": {
+    "/api/Cliente": {
       "get": {
         "tags": [
-          "Clientes"
+          "Cliente"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClienteViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClienteViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClienteViewModel"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Clientes"
+          "Cliente"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             }
           }
@@ -46,10 +72,10 @@
         }
       }
     },
-    "/api/Clientes/{id}": {
+    "/api/Cliente/{id}": {
       "get": {
         "tags": [
-          "Clientes"
+          "Cliente"
         ],
         "parameters": [
           {
@@ -64,13 +90,30 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClienteViewModel"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Clientes"
+          "Cliente"
         ],
         "parameters": [
           {
@@ -87,17 +130,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Cliente"
+                "$ref": "#/components/schemas/ClienteViewModel"
               }
             }
           }
@@ -110,7 +153,7 @@
       },
       "delete": {
         "tags": [
-          "Clientes"
+          "Cliente"
         ],
         "parameters": [
           {
@@ -130,36 +173,62 @@
         }
       }
     },
-    "/api/Empleados": {
+    "/api/Empleado": {
       "get": {
         "tags": [
-          "Empleados"
+          "Empleado"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadoViewModel"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Empleados"
+          "Empleado"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             }
           }
@@ -171,10 +240,10 @@
         }
       }
     },
-    "/api/Empleados/{id}": {
+    "/api/Empleado/{id}": {
       "get": {
         "tags": [
-          "Empleados"
+          "Empleado"
         ],
         "parameters": [
           {
@@ -189,13 +258,30 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmpleadoViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmpleadoViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmpleadoViewModel"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Empleados"
+          "Empleado"
         ],
         "parameters": [
           {
@@ -212,17 +298,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleado"
+                "$ref": "#/components/schemas/EmpleadoViewModel"
               }
             }
           }
@@ -235,7 +321,7 @@
       },
       "delete": {
         "tags": [
-          "Empleados"
+          "Empleado"
         ],
         "parameters": [
           {
@@ -255,36 +341,62 @@
         }
       }
     },
-    "/api/Envios": {
+    "/api/Envio": {
       "get": {
         "tags": [
-          "Envios"
+          "Envio"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnvioViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnvioViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EnvioViewModel"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Envios"
+          "Envio"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             }
           }
@@ -296,10 +408,10 @@
         }
       }
     },
-    "/api/Envios/{id}": {
+    "/api/Envio/{id}": {
       "get": {
         "tags": [
-          "Envios"
+          "Envio"
         ],
         "parameters": [
           {
@@ -314,13 +426,30 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnvioViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnvioViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnvioViewModel"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Envios"
+          "Envio"
         ],
         "parameters": [
           {
@@ -337,17 +466,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Envio"
+                "$ref": "#/components/schemas/EnvioViewModel"
               }
             }
           }
@@ -360,7 +489,7 @@
       },
       "delete": {
         "tags": [
-          "Envios"
+          "Envio"
         ],
         "parameters": [
           {
@@ -387,7 +516,33 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PaqueteViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PaqueteViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PaqueteViewModel"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -399,17 +554,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             }
           }
@@ -439,7 +594,24 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaqueteViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaqueteViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaqueteViewModel"
+                }
+              }
+            }
           }
         }
       },
@@ -462,17 +634,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Paquete"
+                "$ref": "#/components/schemas/PaqueteViewModel"
               }
             }
           }
@@ -505,36 +677,62 @@
         }
       }
     },
-    "/api/Rutas": {
+    "/api/Ruta": {
       "get": {
         "tags": [
-          "Rutas"
+          "Ruta"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RutaViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RutaViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RutaViewModel"
+                  }
+                }
+              }
+            }
           }
         }
       },
       "post": {
         "tags": [
-          "Rutas"
+          "Ruta"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             }
           }
@@ -546,10 +744,10 @@
         }
       }
     },
-    "/api/Rutas/{id}": {
+    "/api/Ruta/{id}": {
       "get": {
         "tags": [
-          "Rutas"
+          "Ruta"
         ],
         "parameters": [
           {
@@ -564,13 +762,30 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RutaViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RutaViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RutaViewModel"
+                }
+              }
+            }
           }
         }
       },
       "put": {
         "tags": [
-          "Rutas"
+          "Ruta"
         ],
         "parameters": [
           {
@@ -587,17 +802,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Ruta"
+                "$ref": "#/components/schemas/RutaViewModel"
               }
             }
           }
@@ -610,7 +825,7 @@
       },
       "delete": {
         "tags": [
-          "Rutas"
+          "Ruta"
         ],
         "parameters": [
           {
@@ -672,7 +887,7 @@
   },
   "components": {
     "schemas": {
-      "Cliente": {
+      "ClienteViewModel": {
         "required": [
           "direccion",
           "nombre",
@@ -695,18 +910,11 @@
           "telefono": {
             "type": "string",
             "nullable": true
-          },
-          "paquetes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Paquete"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Empleado": {
+      "EmpleadoViewModel": {
         "required": [
           "cargo",
           "nombre",
@@ -733,7 +941,7 @@
         },
         "additionalProperties": false
       },
-      "Envio": {
+      "EnvioViewModel": {
         "type": "object",
         "properties": {
           "id": {
@@ -744,22 +952,13 @@
             "type": "integer",
             "format": "int32"
           },
-          "paquete": {
-            "$ref": "#/components/schemas/Paquete"
-          },
           "clienteId": {
             "type": "integer",
             "format": "int32"
           },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
-          },
           "empleadoId": {
             "type": "integer",
             "format": "int32"
-          },
-          "empleado": {
-            "$ref": "#/components/schemas/Empleado"
           },
           "fechaEnvio": {
             "type": "string",
@@ -772,17 +971,18 @@
           "estado": {
             "type": "string",
             "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Paquete": {
+      "PaqueteViewModel": {
         "required": [
-          "cliente",
-          "envios",
           "estado",
-          "nombre",
-          "peso"
+          "nombre"
         ],
         "type": "object",
         "properties": {
@@ -809,25 +1009,14 @@
           "clienteId": {
             "type": "integer",
             "format": "int32"
-          },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
-          },
-          "envios": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Envio"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Ruta": {
+      "RutaViewModel": {
         "required": [
           "destino",
-          "distancia",
-          "empleado",
+          "envio",
           "origen"
         ],
         "type": "object",
@@ -848,12 +1037,8 @@
             "type": "number",
             "format": "double"
           },
-          "empleadoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "empleado": {
-            "$ref": "#/components/schemas/Empleado"
+          "envio": {
+            "$ref": "#/components/schemas/EnvioViewModel"
           }
         },
         "additionalProperties": false

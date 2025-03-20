@@ -13,33 +13,33 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR
 
         public async Task<IEnumerable<Paquete>> GetAllAsync()
         {
-            return await _context.Paquete.ToListAsync();
+            return await _context.Paquetes.ToListAsync();
         }
 
         public async Task<Paquete?> GetByIdAsync(int id)
         {
-            return await _context.Paquete
+            return await _context.Paquetes
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task AddAsync(Paquete paquete)
         {
-            await _context.Paquete.AddAsync(paquete);
+            await _context.Paquetes.AddAsync(paquete);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Paquete paquete)
         {
-            _context.Paquete.Update(paquete);
+            _context.Paquetes.Update(paquete);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
         {
-            var paquete = await _context.Paquete.FindAsync(id);
+            var paquete = await _context.Paquetes.FindAsync(id);
             if (paquete != null)
             {
-                _context.Paquete.Remove(paquete);
+                _context.Paquetes.Remove(paquete);
                 await _context.SaveChangesAsync();
             }
         }

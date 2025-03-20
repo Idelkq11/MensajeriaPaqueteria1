@@ -178,3 +178,4 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\o
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\obj\Debug\net8.0\MensajeriaPaqueteria.Api.genruntimeconfig.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\obj\Debug\net8.0\ref\MensajeriaPaqueteria.Api.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Api\bin\Debug\net8.0\AutoMapper.dll

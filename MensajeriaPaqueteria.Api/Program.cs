@@ -6,36 +6,61 @@ using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.RutaR;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using MensajeriaPaqueteria.Api.Mappings;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
+
+    
         var builder = WebApplication.CreateBuilder(args);
 
-        // Registrar DbContext con la cadena de conexión
-        builder.Services.AddDbContext<MensajeriaPaqueteriaDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("MensajeriaPaqueteriaDbs")));
+       // Configuración de Swagger para la documentación de la API
+       builder.Services.AddEndpointsApiExplorer();
+       builder.Services.AddSwaggerGen();
+
+      var Configuration = builder.Configuration;
+
+
+// Registrar DbContext con la cadena de conexión
+builder.Services.AddDbContext<MensajeriaPaqueteriaDbContext>(options =>
+            options.UseSqlServer(
+            Configuration.GetConnectionString("MensajeriaPaqueteriaDbs"),
+             b => b.MigrationsAssembly("MensajeriaPaqueteria.Infrastructure.Data")
+             ));
 
         // Registrar Repositorios
         builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
         builder.Services.AddScoped<IEmpleadoRepository, EmpleadoRepository>();
-        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); // Asegúrate de que esta interfaz esté bien definida
-        builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();  // Correcto
-        builder.Services.AddScoped<IEnvioRepository, EnvioRepository>();
+        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); 
+        builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();  
 
         // Registrar Servicios
         builder.Services.AddScoped<IClienteService, ClienteService>();
         builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
-        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); // Asegúrate de que esta línea sea correcta para tu proyecto
+        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); 
         builder.Services.AddScoped<IPaqueteService, PaqueteService>();
         builder.Services.AddScoped<IEnvioService, EnvioService>();
 
-        // Agregar controladores
-        builder.Services.AddControllers();
 
-        // Configuración de CORS
-        builder.Services.AddCors(options =>
+// API permite solicitudes desde el proyecto web 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+// Agregar controladores
+builder.Services.AddControllers();
+
+// Registro de AutoMapper y el perfil de mapeo
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+
+    // Configuración de CORS
+    builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowAll", policy =>
                 policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
@@ -60,5 +85,5 @@ internal class Program
 
         app.MapControllers();
         app.Run();
-    }
-}
+    
+

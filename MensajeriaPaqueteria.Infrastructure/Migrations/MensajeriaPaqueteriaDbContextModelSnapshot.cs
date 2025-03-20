@@ -44,7 +44,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cliente");
+                    b.ToTable("Clientes");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Empleado", b =>
@@ -69,7 +69,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Empleado");
+                    b.ToTable("Empleados");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Envio", b =>
@@ -98,6 +98,9 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                     b.Property<int>("PaqueteId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("RutaId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClienteId");
@@ -106,7 +109,9 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
 
                     b.HasIndex("PaqueteId");
 
-                    b.ToTable("Envio", "dbo");
+                    b.HasIndex("RutaId");
+
+                    b.ToTable("Envios");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
@@ -138,7 +143,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Paquete");
+                    b.ToTable("Paquetes");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ruta", b =>
@@ -156,18 +161,13 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                     b.Property<double>("Distancia")
                         .HasColumnType("float");
 
-                    b.Property<int>("EmpleadoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Origen")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmpleadoId");
-
-                    b.ToTable("Ruta");
+                    b.ToTable("Rutas");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Envio", b =>
@@ -190,6 +190,10 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Ruta", null)
+                        .WithMany("Envio")
+                        .HasForeignKey("RutaId");
+
                     b.Navigation("Cliente");
 
                     b.Navigation("Empleado");
@@ -200,7 +204,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
                 {
                     b.HasOne("MensajeriaPaqueteria.Domain.Entities.Cliente", "Cliente")
-                        .WithMany("Paquete")
+                        .WithMany("Paquetes")
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -208,23 +212,17 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                     b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ruta", b =>
-                {
-                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Empleado", "Empleado")
-                        .WithMany()
-                        .HasForeignKey("EmpleadoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Empleado");
-                });
-
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Cliente", b =>
                 {
-                    b.Navigation("Paquete");
+                    b.Navigation("Paquetes");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
+                {
+                    b.Navigation("Envio");
+                });
+
+            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ruta", b =>
                 {
                     b.Navigation("Envio");
                 });
