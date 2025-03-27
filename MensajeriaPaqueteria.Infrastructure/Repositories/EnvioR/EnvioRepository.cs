@@ -6,38 +6,46 @@ using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR
 {
-    public class EnvioRepository(MensajeriaPaqueteriaDbContext context) : IEnvioRepository
+    public class EnvioRepository : IEnvioRepository
     {
-        private readonly MensajeriaPaqueteriaDbContext _context = context;
+        private readonly MensajeriaPaqueteriaDbContext _context;
 
+        public EnvioRepository(MensajeriaPaqueteriaDbContext context)
+        {
+            _context = context;
+        }
+
+        // Obtener todos los envíos
         public async Task<IEnumerable<Envio>> GetAllAsync()
         {
             return await _context.Envios
-                .Include(e => e.Paquete) // Incluye los datos del Paquete relacionado
+                .Include(e => e.Paquete) 
                 .ToListAsync();
         }
 
+        // Obtener un envío por su ID
         public async Task<Envio?> GetByIdAsync(int id)
         {
             return await _context.Envios
-                .Include(e => e.Paquete) // Incluye el Paquete relacionado
-                
-                .FirstOrDefaultAsync(e => e.Id == id); // Ejecuta la consulta
+                .Include(e => e.Paquete) 
+                .FirstOrDefaultAsync(e => e.EnvioId == id);
         }
 
-
+        // Agregar un nuevo envío
         public async Task AddAsync(Envio envio)
         {
             await _context.Envios.AddAsync(envio);
             await _context.SaveChangesAsync();
         }
 
+        // Actualizar un envío existente
         public async Task UpdateAsync(Envio envio)
         {
             _context.Envios.Update(envio);
             await _context.SaveChangesAsync();
         }
 
+        // Eliminar un envío por su ID
         public async Task DeleteAsync(int id)
         {
             var envio = await _context.Envios.FindAsync(id);
@@ -49,5 +57,6 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR
         }
     }
 }
+
 
 

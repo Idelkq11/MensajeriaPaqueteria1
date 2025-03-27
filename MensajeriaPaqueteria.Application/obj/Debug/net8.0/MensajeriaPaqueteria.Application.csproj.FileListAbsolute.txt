@@ -1,4 +1,5 @@
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.deps.json
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.runtimeconfig.json
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Application.pdb
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\bin\Debug\net8.0\MensajeriaPaqueteria.Domain.dll
@@ -15,4 +16,5 @@ C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Appli
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\refint\MensajeriaPaqueteria.Application.dll
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.pdb
+C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\MensajeriaPaqueteria.Application.genruntimeconfig.cache
 C:\ProyectoMensajeriaPaqueteria\MensajeriaPaqueteria1\MensajeriaPaqueteria.Application\obj\Debug\net8.0\ref\MensajeriaPaqueteria.Application.dll

@@ -1,89 +1,93 @@
-using MensajeriaPaqueteria.Application.Services;
+
 using MensajeriaPaqueteria.Infrastructure.Data;
 using MensajeriaPaqueteria.Infrastructure.Repositories.ClienteR;
-using MensajeriaPaqueteria.Infrastructure.Repositories.EmpleadoR;
+using MensajeriaPaqueteria.Infrastructure.Repositories.MensajeroR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.RutaR;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using MensajeriaPaqueteria.Api.Mappings;
+using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Application.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var Configuration = builder.Configuration;
 
 
-    
-        var builder = WebApplication.CreateBuilder(args);
-
-       // Configuración de Swagger para la documentación de la API
-       builder.Services.AddEndpointsApiExplorer();
-       builder.Services.AddSwaggerGen();
-
-      var Configuration = builder.Configuration;
-
-
-// Registrar DbContext con la cadena de conexión
 builder.Services.AddDbContext<MensajeriaPaqueteriaDbContext>(options =>
-            options.UseSqlServer(
-            Configuration.GetConnectionString("MensajeriaPaqueteriaDbs"),
-             b => b.MigrationsAssembly("MensajeriaPaqueteria.Infrastructure.Data")
-             ));
-
-        // Registrar Repositorios
-        builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
-        builder.Services.AddScoped<IEmpleadoRepository, EmpleadoRepository>();
-        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); 
-        builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();  
-
-        // Registrar Servicios
-        builder.Services.AddScoped<IClienteService, ClienteService>();
-        builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
-        builder.Services.AddScoped<IRutaRepository, RutaRepository>(); 
-        builder.Services.AddScoped<IPaqueteService, PaqueteService>();
-        builder.Services.AddScoped<IEnvioService, EnvioService>();
+    options.UseSqlServer(
+        Configuration.GetConnectionString("MensajeriaPaqueteriaDbs"),
+        b => b.MigrationsAssembly("MensajeriaPaqueteria.Infrastructure.Data")
+    ));
 
 
-// API permite solicitudes desde el proyecto web 
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IMensajeroRepository, MensajeroRepository>();
+builder.Services.AddScoped<IRutaRepository, RutaRepository>();
+builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();
+builder.Services.AddScoped<IEnvioRepository, EnvioRepository>();
+
+
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IMensajeroService, MensajeroService>();
+builder.Services.AddScoped<IRutaService, RutaService>();
+builder.Services.AddScoped<IPaqueteService, PaqueteService>();
+builder.Services.AddScoped<IEnvioService, EnvioService>();
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin()
+                                .AllowAnyMethod()
+                                .AllowAnyHeader();
+                      });
 });
 
-// Agregar controladores
+
+
 builder.Services.AddControllers();
 
-// Registro de AutoMapper y el perfil de mapeo
+
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+var app = builder.Build();
 
-    // Configuración de CORS
-    builder.Services.AddCors(options =>
-        {
-            options.AddPolicy("AllowAll", policy =>
-                policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-        });
 
-        // Habilitar Swagger
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-        var app = builder.Build();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
+}
 
-        // Configuración del pipeline HTTP
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+app.UseCors(MyAllowSpecificOrigins);
 
-        app.UseHttpsRedirection();
-        app.UseAuthorization();
-        app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 
-        app.MapControllers();
-        app.Run();
-    
+app.UseRouting();
 
+app.UseAuthorization();
+
+
+app.MapControllers();
+
+
+
+
+app.Run();

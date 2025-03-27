@@ -1,6 +1,5 @@
-@MensajeriaPaqueteria.Api_HostAddress = http://localhost:5092
+@MensajeriaPaqueteria.Api_HostAddress = https://localhost:5092
 
-GET {{MensajeriaPaqueteria.Api_HostAddress}}/weatherforecast/
+GET https://localhost:5092/weatherforecast
 Accept: application/json
-
 ###

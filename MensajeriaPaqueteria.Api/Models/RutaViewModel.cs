@@ -1,17 +1,19 @@
-﻿using MensajeriaPaqueteria.Api.Models;
+﻿using MensajeriaPaqueteria.Domain.Entities;
+using MensajeriaPaqueteria.Infrastructure.Repositories.RutaR;
+using Microsoft.AspNetCore.Mvc;
 
-namespace MensajeriaPaqueteria.Domain.Entities
+namespace MensajeriaPaqueteria.Application.ViewModels
 {
     public class RutaViewModel
     {
-        public int Id { get; set; }
-        public required string Origen { get; set; }
-        public required string Destino { get; set; }
-        public double Distancia { get; set; }
-        public required EnvioViewModel Envio { get; set; }
-
-
+        public int RutaID { get; set; }
+        public  string? Origen { get; set; }
+        public  string? Destino { get; set; }
+        public  string? Estado { get; set; } 
+        public int MensajeroID { get; set; }
+        
     }
 }
+
 
 

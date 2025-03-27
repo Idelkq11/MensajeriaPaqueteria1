@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using MensajeriaPaqueteria.Domain.Entities;  
-using MensajeriaPaqueteria.Api.Models; 
+using MensajeriaPaqueteria.Api.Models;
+using MensajeriaPaqueteria.Application.ViewModels;
+
 
 namespace MensajeriaPaqueteria.Api.Mappings
 {
@@ -8,13 +10,13 @@ namespace MensajeriaPaqueteria.Api.Mappings
     {
         public MappingProfile()
         {
-            // Aquí defines cómo se mapean las entidades con los ViewModels
+           
             CreateMap<Cliente, ClienteViewModel>().ReverseMap();
-            CreateMap<Empleado, EmpleadoViewModel>().ReverseMap();
+            CreateMap<Mensajero, MensajeroViewModel>().ReverseMap();
             CreateMap<Paquete, PaqueteViewModel>().ReverseMap();
             CreateMap<Envio, EnvioViewModel>().ReverseMap();
             CreateMap<Ruta, RutaViewModel>().ReverseMap();
-            // Agrega más mapeos según lo que necesites
+           
         }
     }
 }

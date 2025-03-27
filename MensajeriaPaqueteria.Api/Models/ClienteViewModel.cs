@@ -1,11 +1,15 @@
-﻿namespace MensajeriaPaqueteria.Api.Models
+﻿using MensajeriaPaqueteria.Domain.Entities;
+using MensajeriaPaqueteria.Infrastructure.Repositories.ClienteR;
+using Microsoft.AspNetCore.Mvc;
+
+namespace MensajeriaPaqueteria.Api.Models
 {
     public class ClienteViewModel
     {
-        public int Id { get; set; }
-        public required string Nombre { get; set; }
-        public required string Direccion { get; set; }
-        public required string Telefono { get; set; }
+        public int ClienteId { get; set; }
+        public  string? Nombre { get; set; }
+        public  string? Direccion { get; set; }
+        public  string? Telefono { get; set; }
     
         
     }

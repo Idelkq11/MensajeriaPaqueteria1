@@ -1,0 +1,71 @@
+﻿@page
+@model HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mt-4">
+    <h1 class="header-title" style="font-weight: bold;">¡Bienvenido a Mensajería & Paquetería 360!</h1>
+    <p class="lead">Gestiona fácilmente tus clientes, envíos, paquetes y rutas.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <i class="bi bi-people-fill text-success" style="font-size: 2rem;"></i>
+                    <h5 class="card-title mt-2">Clientes</h5>
+                    <p class="card-text">Administra la información de tus clientes.</p>
+                    <a asp-page="/Clientes/Index" class="btn btn-success">Ir a Clientes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <i class="bi bi-truck text-warning" style="font-size: 2rem;"></i>
+                    <h5 class="card-title mt-2">Envíos</h5>
+                    <p class="card-text">Consulta el estado y la ruta de los envíos.</p>
+                    <a asp-page="/Envios/Index" class="btn btn-warning">Ir a Envíos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <i class="bi bi-person-badge-fill text-primary" style="font-size: 2rem;"></i>
+                    <h5 class="card-title mt-2">Mensajeros</h5>
+                    <p class="card-text">Gestiona a los mensajeros y su disponibilidad.</p>
+                    <a asp-page="/Mensajeros/Index" class="btn btn-primary">Ir a Mensajeros</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <i class="bi bi-box-seam text-danger" style="font-size: 2rem;"></i>
+                    <h5 class="card-title mt-2">Paquetes</h5>
+                    <p class="card-text">Rastrea y administra paquetes en tránsito.</p>
+                    <a asp-page="/Paquetes/Index" class="btn btn-danger">Ir a Paquetes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center mt-4">
+        <div class="col-md-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <i class="bi bi-map-fill text-info" style="font-size: 2rem;"></i>
+                    <h5 class="card-title mt-2">Rutas</h5>
+                    <p class="card-text">Consulta y optimiza las rutas de entrega.</p>
+                    <a asp-page="/Rutas/Index" class="btn btn-info">Ir a Rutas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center mt-5">
+    <p>© 2025 - Mensajería & Paquetería  - <a asp-page="/Privacy">Privacy</a></p>
+</footer>

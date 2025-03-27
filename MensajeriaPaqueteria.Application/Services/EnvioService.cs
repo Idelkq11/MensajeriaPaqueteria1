@@ -1,82 +1,112 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
+﻿using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Application.Core;
+using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Application.Services
 {
-    public class EnvioService(IEnvioRepository envioRepository) : IEnvioService
+
+    public class EnvioService : BaseService, IEnvioService
     {
-        private readonly IEnvioRepository _envioRepository = envioRepository;
+        private readonly IEnvioRepository _repository;
 
-        public async Task<IEnumerable<Envio>> GetAllAsync()
+        public EnvioService(IEnvioRepository repository)
         {
-            return await _envioRepository.GetAllAsync();
+            _repository = repository;
         }
 
-        public async Task<Envio?> GetByIdAsync(int id)
+        public async Task<IEnumerable<EnvioDto>> GetAllAsync()
         {
-            return await _envioRepository.GetByIdAsync(id);
+            var envios = await _repository.GetAllAsync();
+
+            return envios.Select(e => new EnvioDto
+            {
+                EnvioId = e.EnvioId,
+                FechaEnvio = e.FechaEnvio,
+                Direccion = e.Direccion,
+                PaqueteId = e.PaqueteId,
+                PaqueteTipo = e.Paquete?.TipoPaquete ?? "Desconocido"
+            });
         }
 
-        public async Task<string> CreateAsync(Envio envio)
+        public async Task<EnvioDto?> GetByIdAsync(int id)
+        {
+            var envio = await _repository.GetByIdAsync(id);
+
+            if (envio == null)
+                return null;
+
+            return new EnvioDto
+            {
+                EnvioId = envio.EnvioId,
+                FechaEnvio = envio.FechaEnvio,
+                Direccion = envio.Direccion,
+                PaqueteId = envio.PaqueteId,
+                PaqueteTipo = envio.Paquete?.TipoPaquete ?? "Desconocido"
+            };
+        }
+
+        public async Task<ServiceResult> CreateAsync(EnvioDto envioDto)
         {
             try
             {
-                await _envioRepository.AddAsync(envio);
-                return "Envio creado exitosamente.";
+                var envio = new Envio
+                {
+                    FechaEnvio = envioDto.FechaEnvio,
+                    Direccion = envioDto.Direccion,
+                    PaqueteId = envioDto.PaqueteId
+                };
+                await _repository.AddAsync(envio);
+
+                return ServiceResult.Success("Envío creado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al crear el envio: {ex.Message}";
+                return ServiceResult.Failure($"Error al crear el envío: {ex.Message}");
             }
         }
 
-        public async Task<string> UpdateAsync(int id, Envio envio)
+        public async Task<ServiceResult> UpdateAsync(int id, EnvioDto envioDto)
         {
             try
             {
-                var existingEnvio = await _envioRepository.GetByIdAsync(id);
+                var existingEnvio = await _repository.GetByIdAsync(id);
 
                 if (existingEnvio == null)
-                    return $"Envio con ID {id} no encontrado.";
+                    return ServiceResult.Failure($"Envío con ID {id} no encontrado.");
 
-                existingEnvio.PaqueteId = envio.PaqueteId;
-                existingEnvio.FechaEnvio = envio.FechaEnvio;
-                existingEnvio.FechaEntrega = envio.FechaEntrega;
-                existingEnvio.Estado = envio.Estado;
-                
+                existingEnvio.FechaEnvio = envioDto.FechaEnvio;
+                existingEnvio.Direccion = envioDto.Direccion;
+                existingEnvio.PaqueteId = envioDto.PaqueteId;
 
-                await _envioRepository.UpdateAsync(existingEnvio);
+                await _repository.UpdateAsync(existingEnvio);
 
-                return "Envio actualizado exitosamente.";
+                return ServiceResult.Success("Envío actualizado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al actualizar el envio: {ex.Message}";
+                return ServiceResult.Failure($"Error al actualizar el envío: {ex.Message}");
             }
         }
 
-        public async Task<string> DeleteAsync(int id)
+        public async Task<ServiceResult> DeleteAsync(int id)
         {
             try
             {
-                var envio = await _envioRepository.GetByIdAsync(id);
+                var envio = await _repository.GetByIdAsync(id);
 
                 if (envio == null)
-                    return $"Envio con ID {id} no encontrado.";
+                    return ServiceResult.Failure($"Envío con ID {id} no encontrado.");
 
-                await _envioRepository.DeleteAsync(id);
-                return "Envio eliminado exitosamente.";
+                await _repository.DeleteAsync(id);
+
+                return ServiceResult.Success("Envío eliminado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al eliminar el envio: {ex.Message}";
+                return ServiceResult.Failure($"Error al eliminar el envío: {ex.Message}");
             }
         }
-    }
-
-    public interface IEnvioService
-    {
     }
 }

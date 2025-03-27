@@ -24,11 +24,11 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Cliente", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ClienteId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"));
 
                     b.Property<string>("Direccion")
                         .IsRequired()
@@ -42,20 +42,45 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ClienteId");
 
                     b.ToTable("Clientes");
                 });
 
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Empleado", b =>
+            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Envio", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("EnvioId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EnvioId"));
 
-                    b.Property<string>("Cargo")
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaEnvio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PaqueteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("EnvioId");
+
+                    b.HasIndex("PaqueteId");
+
+                    b.ToTable("Envios");
+                });
+
+            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Mensajero", b =>
+                {
+                    b.Property<int>("MensajeroId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MensajeroId"));
+
+                    b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -67,136 +92,84 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Empleados");
-                });
-
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Envio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EmpleadoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Estado")
+                    b.Property<string>("Vehiculo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaEntrega")
-                        .HasColumnType("datetime2");
+                    b.HasKey("MensajeroId");
 
-                    b.Property<DateTime>("FechaEnvio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PaqueteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("RutaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClienteId");
-
-                    b.HasIndex("EmpleadoId");
-
-                    b.HasIndex("PaqueteId");
-
-                    b.HasIndex("RutaId");
-
-                    b.ToTable("Envios");
+                    b.ToTable("Mensajeros");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("PaqueteId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaqueteId"));
 
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Descripcion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Estado")
+                    b.Property<string>("EstadoPaquete")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nombre")
+                    b.Property<DateTime>("FechaEnvio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Peso")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("TipoPaquete")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Peso")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
+                    b.HasKey("PaqueteId");
 
                     b.HasIndex("ClienteId");
 
                     b.ToTable("Paquetes");
                 });
 
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ruta", b =>
+            modelBuilder.Entity("Ruta", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("RutaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RutaId"));
 
                     b.Property<string>("Destino")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Distancia")
-                        .HasColumnType("float");
+                    b.Property<string>("EstadoRuta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MensajeroId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Origen")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("RutaId");
+
+                    b.HasIndex("MensajeroId");
 
                     b.ToTable("Rutas");
                 });
 
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Envio", b =>
                 {
-                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Cliente", "Cliente")
-                        .WithMany()
-                        .HasForeignKey("ClienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Empleado", "Empleado")
-                        .WithMany()
-                        .HasForeignKey("EmpleadoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MensajeriaPaqueteria.Domain.Entities.Paquete", "Paquete")
-                        .WithMany("Envio")
+                        .WithMany()
                         .HasForeignKey("PaqueteId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Ruta", null)
-                        .WithMany("Envio")
-                        .HasForeignKey("RutaId");
-
-                    b.Navigation("Cliente");
-
-                    b.Navigation("Empleado");
 
                     b.Navigation("Paquete");
                 });
@@ -204,7 +177,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
             modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
                 {
                     b.HasOne("MensajeriaPaqueteria.Domain.Entities.Cliente", "Cliente")
-                        .WithMany("Paquetes")
+                        .WithMany()
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -212,19 +185,15 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                     b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Cliente", b =>
+            modelBuilder.Entity("Ruta", b =>
                 {
-                    b.Navigation("Paquetes");
-                });
+                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Mensajero", "Mensajero")
+                        .WithMany()
+                        .HasForeignKey("MensajeroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Paquete", b =>
-                {
-                    b.Navigation("Envio");
-                });
-
-            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ruta", b =>
-                {
-                    b.Navigation("Envio");
+                    b.Navigation("Mensajero");
                 });
 #pragma warning restore 612, 618
         }

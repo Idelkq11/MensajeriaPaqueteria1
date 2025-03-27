@@ -1,0 +1,34 @@
+﻿@page
+@model MensajeriaPaqueteria.Web.Pages.Clientes.CreateModel
+
+@{
+    ViewData["Title"] = "Crear Cliente";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" id="Nombre" name="Cliente.Nombre" value="@Model.Cliente.Nombre" required />
+    </div>
+    <div class="form-group">
+        <label for="Direccion">Dirección</label>
+        <input type="text" class="form-control" id="Direccion" name="Cliente.Direccion" value="@Model.Cliente.Direccion" required />
+    </div>
+    <div class="form-group">
+        <label for="Telefono">Teléfono</label>
+        <input type="text" class="form-control" id="Telefono" name="Cliente.Telefono" value="@Model.Cliente.Telefono" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Eliminar Cliente </button>
+</form>
+
+<br />
+
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}

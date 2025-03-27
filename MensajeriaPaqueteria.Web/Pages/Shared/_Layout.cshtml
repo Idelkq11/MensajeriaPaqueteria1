@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MensajeriaPaqueteria.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MensajeriaPaqueteria.Web.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #212529;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+            .navbar a {
+                color: #fff;
+            }
+
+                .navbar a:hover {
+                    color: #d4d4d4;
+                }
+
+        .footer {
+            background-color: #f8f9fa;
+            color: #212529;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/Index">Mensajería & Paquetería 360</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Clientes">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Envios">Envíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Paquetes">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Rutas">Rutas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Mensajeros">Mensajeros</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Privacy">Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 - Mensajería & Paquetería 360 - <a href="/Privacy">Privacidad</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

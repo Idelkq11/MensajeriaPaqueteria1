@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Domain", "MensajeriaPaqueteria.Domain\MensajeriaPaqueteria.Domain.csproj", "{D69A94BC-4B90-40D6-9EC1-305FA4A586BC}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Api", "MensajeriaPaqueteria.Api\MensajeriaPaqueteria.Api.csproj", "{54C6CA59-723A-4561-80C6-17BFABDB3A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Web", "MensajeriaPaqueteria.Web\MensajeriaPaqueteria.Web.csproj", "{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajeriaPaqueteria.Web", "MensajeriaPaqueteria.Web\MensajeriaPaqueteria.Web.csproj", "{45C0CC9B-D8EC-401A-8263-FE97F24D1F99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C6CA59-723A-4561-80C6-17BFABDB3A07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF746D9E-CC11-419A-804C-E4D1B5AAB64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C0CC9B-D8EC-401A-8263-FE97F24D1F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C0CC9B-D8EC-401A-8263-FE97F24D1F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C0CC9B-D8EC-401A-8263-FE97F24D1F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C0CC9B-D8EC-401A-8263-FE97F24D1F99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,8 +15,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.EntityFrameworkCore.Design": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.3",
-          "Swashbuckle.AspNetCore": "6.9.0"
+          "Swashbuckle.AspNetCore": "6.9.0",
+          "bootstrap": "5.3.3"
         },
         "runtime": {
           "MensajeriaPaqueteria.Api.dll": {}
@@ -68,6 +68,7 @@
           }
         }
       },
+      "bootstrap/5.3.3": {},
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -511,11 +512,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/9.0.3": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "9.0.3"
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
       "Microsoft.Extensions.Caching.Abstractions/9.0.3": {
         "dependencies": {
@@ -540,18 +536,6 @@
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.325.11113"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration/9.0.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Primitives": "9.0.3"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.225.6610"
           }
         }
       },
@@ -1116,9 +1100,12 @@
       },
       "MensajeriaPaqueteria.Application/1.0.0": {
         "dependencies": {
-          "AutoMapper": "14.0.0",
           "MensajeriaPaqueteria.Domain": "1.0.0",
-          "MensajeriaPaqueteria.Infrastructure": "1.0.0"
+          "MensajeriaPaqueteria.Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
+          "Swashbuckle.AspNetCore": "6.9.0",
+          "bootstrap": "5.3.3"
         },
         "runtime": {
           "MensajeriaPaqueteria.Application.dll": {
@@ -1129,7 +1116,7 @@
       },
       "MensajeriaPaqueteria.Domain/1.0.0": {
         "dependencies": {
-          "AutoMapper": "14.0.0"
+          "Microsoft.EntityFrameworkCore": "9.0.3"
         },
         "runtime": {
           "MensajeriaPaqueteria.Domain.dll": {
@@ -1140,11 +1127,9 @@
       },
       "MensajeriaPaqueteria.Infrastructure/1.0.0": {
         "dependencies": {
-          "AutoMapper": "14.0.0",
           "MensajeriaPaqueteria.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "Microsoft.Extensions.Configuration": "9.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
         },
         "runtime": {
           "MensajeriaPaqueteria.Infrastructure.dll": {
@@ -1181,6 +1166,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "bootstrap/5.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iQohLXwneNPDyW4x24mKQ90qGwT5WTtNl3KybL0koTluJPjKYxFCU/NTLHsJiWR2n7VmnwcpAgr8TR42KNmPOg==",
+      "path": "bootstrap/5.3.3",
+      "hashPath": "bootstrap.5.3.3.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1315,13 +1307,6 @@
       "path": "microsoft.entityframeworkcore.sqlserver/9.0.3",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.9.0.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/9.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-c2kkyHhkop9WAbBWgm64apzPbzMeu0iKsRW3cn5kxSge0SQNxSlkAOtnO4L9dc8YwCAtFFyAZrxVFekxyvxKwQ==",
-      "path": "microsoft.entityframeworkcore.tools/9.0.3",
-      "hashPath": "microsoft.entityframeworkcore.tools.9.0.3.nupkg.sha512"
-    },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
       "serviceable": true,
@@ -1342,13 +1327,6 @@
       "sha512": "sha512-TXggBGDDd6r+J7FV09plXpzGmWcknVyoDsHlY2qcCbcAhmb0eH7Q9IkfIZl54/zEedVTa9jPgiPFTxH9WuCGMQ==",
       "path": "microsoft.extensions.caching.memory/9.0.3",
       "hashPath": "microsoft.extensions.caching.memory.9.0.3.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration/9.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-EBZW+u96tApIvNtjymXEIS44tH0I/jNwABHo4c33AchWOiDWCq2rL3klpnIo+xGrxoVGJzPDISV6hZ+a9C9SzQ==",
-      "path": "microsoft.extensions.configuration/9.0.2",
-      "hashPath": "microsoft.extensions.configuration.9.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
       "type": "package",

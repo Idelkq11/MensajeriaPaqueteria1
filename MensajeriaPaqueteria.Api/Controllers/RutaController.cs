@@ -1,102 +1,88 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
-using MensajeriaPaqueteria.Infrastructure.Repositories.RutaR;
-using MensajeriaPaqueteria.Api.Models;
+﻿using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace MensajeriaPaqueteria.Api.Controllers
+namespace MensajeriaPaqueteria.API.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    public class RutaController : ControllerBase
+    [ApiController]
+    public class RutasController : ControllerBase
     {
-        private readonly IRutaRepository _rutaRepository;
+        private readonly IRutaService _rutaService;
 
-        public RutaController(IRutaRepository rutaRepository)
+        public RutasController(IRutaService rutaService)
         {
-            _rutaRepository = rutaRepository;
+            _rutaService = rutaService;
         }
 
+       
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<RutaViewModel>>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var rutas = await _rutaRepository.GetAllAsync();
-            var rutasViewModel = rutas.Select(r => new RutaViewModel
-            {
-                Id = r.Id,
-                Origen = r.Origen,
-                Destino = r.Destino,
-                Distancia = r.Distancia,
-                Envio = new EnvioViewModel
-                // Asegúrate de que esta relación se maneje bien
-                {
-                    // Aquí deberías mapear las propiedades correspondientes de Envio a EnvioViewModel
-                }
-            });
+            var rutas = await _rutaService.GetAllAsync();
+            if (rutas == null || !rutas.Any())
+                return NotFound("No se encontraron rutas.");
 
-            return Ok(rutasViewModel);
+            return Ok(rutas);
         }
 
+       
         [HttpGet("{id}")]
-        public async Task<ActionResult<RutaViewModel>> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var ruta = await _rutaRepository.GetByIdAsync(id);
-            if (ruta == null) return NotFound();
+            var ruta = await _rutaService.GetByIdAsync(id);
+            if (ruta == null)
+                return NotFound($"Ruta con ID {id} no encontrada.");
 
-            var rutaViewModel = new RutaViewModel
-            {
-                Id = ruta.Id,
-                Origen = ruta.Origen,
-                Destino = ruta.Destino,
-                Distancia = ruta.Distancia,
-                Envio = new EnvioViewModel // Asegúrate de que esta relación se maneje bien
-                {
-                    // Aquí deberías mapear las propiedades correspondientes de Envio a EnvioViewModel
-                }
-            };
-
-            return Ok(rutaViewModel);
+            return Ok(ruta);
         }
 
+        
         [HttpPost]
-        public async Task<ActionResult> Create(RutaViewModel rutaViewModel)
+        public async Task<IActionResult> Create([FromBody] RutaDto rutaDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var ruta = new Ruta
             {
-                Origen = rutaViewModel.Origen,
-                Destino = rutaViewModel.Destino,
-                Distancia = rutaViewModel.Distancia,
-                Envio = new List<Envio>() // Aquí necesitarías gestionar la relación con Envio
+                Origen = rutaDto.Origen,
+                Destino = rutaDto.Destino,
+                EstadoRuta = rutaDto.EstadoRuta,
+                MensajeroId = rutaDto.MensajeroId
             };
 
-            await _rutaRepository.AddAsync(ruta);
-            return CreatedAtAction(nameof(GetById), new { id = ruta.Id }, rutaViewModel);
+            await _rutaService.CreateAsync(rutaDto);
+            return CreatedAtAction(nameof(GetById), new { id = rutaDto.RutaId }, rutaDto);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, RutaViewModel rutaViewModel)
+        public async Task<IActionResult> Update(int id, [FromBody] RutaDto rutaDto)
         {
-            if (id != rutaViewModel.Id) return BadRequest();
+            if (id != rutaDto.RutaId)
+                return BadRequest("El ID en la ruta no coincide con el ID del modelo.");
 
-            var ruta = new Ruta
-            {
-                Id = rutaViewModel.Id,
-                Origen = rutaViewModel.Origen,
-                Destino = rutaViewModel.Destino,
-                Distancia = rutaViewModel.Distancia,
-                Envio = new List<Envio>() // Aquí necesitarías gestionar la relación con Envio
-            };
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            await _rutaRepository.UpdateAsync(ruta);
+            var existingRuta = await _rutaService.GetByIdAsync(id);
+            if (existingRuta == null)
+                return NotFound($"Ruta con ID {id} no encontrada.");
+
+            await _rutaService.UpdateAsync(id, rutaDto);
             return NoContent();
         }
 
+       
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            await _rutaRepository.DeleteAsync(id);
+            var ruta = await _rutaService.GetByIdAsync(id);
+            if (ruta == null)
+                return NotFound($"Ruta con ID {id} no encontrada.");
+
+            await _rutaService.DeleteAsync(id);
             return NoContent();
         }
     }

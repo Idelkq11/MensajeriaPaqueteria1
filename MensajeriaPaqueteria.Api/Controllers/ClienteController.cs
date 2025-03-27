@@ -1,15 +1,14 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
+﻿using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.ClienteR;
-using MensajeriaPaqueteria.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Api.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteRepository _clienteRepository;
@@ -20,69 +19,67 @@ namespace MensajeriaPaqueteria.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClienteViewModel>>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
             var clientes = await _clienteRepository.GetAllAsync();
-            var clientesViewModel = clientes.Select(c => new ClienteViewModel
-            {
-                Id = c.Id,
-                Nombre = c.Nombre,
-                Direccion = c.Direccion,
-                Telefono = c.Telefono
-            });
-            return Ok(clientesViewModel);
+            if (clientes == null || !clientes.Any())
+                return NotFound("No se encontraron clientes.");
+
+            return Ok(clientes);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClienteViewModel>> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             var cliente = await _clienteRepository.GetByIdAsync(id);
-            if (cliente == null) return NotFound();
+            if (cliente == null)
+                return NotFound($"Cliente con ID {id} no encontrado.");
 
-            var clienteViewModel = new ClienteViewModel
-            {
-                Id = cliente.Id,
-                Nombre = cliente.Nombre,
-                Direccion = cliente.Direccion,
-                Telefono = cliente.Telefono
-            };
-
-            return Ok(clienteViewModel);
+            return Ok(cliente);
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(ClienteViewModel clienteViewModel)
+        public async Task<IActionResult> Create([FromBody] ClienteDto clienteDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var cliente = new Cliente
             {
-                Nombre = clienteViewModel.Nombre,
-                Direccion = clienteViewModel.Direccion,
-                Telefono = clienteViewModel.Telefono
+                Nombre = clienteDto.Nombre,
+                Direccion = clienteDto.Direccion,
+                Telefono = clienteDto.Telefono
             };
+
             await _clienteRepository.AddAsync(cliente);
-            return CreatedAtAction(nameof(GetById), new { id = cliente.Id }, clienteViewModel);
+            return CreatedAtAction(nameof(GetById), new { id = cliente.ClienteId }, cliente);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, ClienteViewModel clienteViewModel)
+        public async Task<IActionResult> Update(int id, [FromBody] ClienteDto clienteDto)
         {
-            if (id != clienteViewModel.Id) return BadRequest();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var cliente = new Cliente
-            {
-                Id = clienteViewModel.Id,
-                Nombre = clienteViewModel.Nombre,
-                Direccion = clienteViewModel.Direccion,
-                Telefono = clienteViewModel.Telefono
-            };
+            var existingCliente = await _clienteRepository.GetByIdAsync(id);
+            if (existingCliente == null)
+                return NotFound($"Cliente con ID {id} no encontrado.");
 
-            await _clienteRepository.UpdateAsync(cliente);
+            existingCliente.Nombre = clienteDto.Nombre;
+            existingCliente.Direccion = clienteDto.Direccion;
+            existingCliente.Telefono = clienteDto.Telefono;
+
+            await _clienteRepository.UpdateAsync(existingCliente);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var cliente = await _clienteRepository.GetByIdAsync(id);
+            if (cliente == null)
+                return NotFound($"Cliente con ID {id} no encontrado.");
+
             await _clienteRepository.DeleteAsync(id);
             return NoContent();
         }

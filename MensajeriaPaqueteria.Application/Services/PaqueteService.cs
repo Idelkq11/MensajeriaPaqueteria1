@@ -1,85 +1,121 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
+﻿using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Application.Core;
+using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Application.Services
 {
-    public class PaqueteService(IPaqueteRepository paqueteRepository) : IPaqueteService
+
+    public class PaqueteService : BaseService, IPaqueteService
     {
-        private readonly IPaqueteRepository _paqueteRepository = paqueteRepository;
+        private readonly IPaqueteRepository _repository;
 
-        public async Task<IEnumerable<Paquete>> GetAllAsync()
+        public PaqueteService(IPaqueteRepository repository)
         {
-            return await _paqueteRepository.GetAllAsync();
+            _repository = repository;
         }
 
-        public async Task<Paquete?> GetByIdAsync(int id)
+        public async Task<IEnumerable<PaqueteDto>> GetAllAsync()
         {
-            return await _paqueteRepository.GetByIdAsync(id);
+            var paquetes = await _repository.GetAllAsync();
+
+            return paquetes.Select(p => new PaqueteDto
+            {
+                PaqueteId = p.PaqueteId,
+                TipoPaquete = p.TipoPaquete,
+                Peso = p.Peso,
+                EstadoPaquete = p.EstadoPaquete,
+                FechaEnvio = p.FechaEnvio,
+                ClienteId = p.ClienteId,
+                ClienteNombre = p.Cliente?.Nombre ?? "Sin nombre" 
+            });
         }
 
-        public async Task<string> CreateAsync(Paquete paquete)
+        public async Task<PaqueteDto?> GetByIdAsync(int id)
+        {
+            var paquete = await _repository.GetByIdAsync(id);
+
+            if (paquete == null)
+                return null;
+
+            return new PaqueteDto
+            {
+                PaqueteId = paquete.PaqueteId,
+                TipoPaquete = paquete.TipoPaquete,
+                Peso = paquete.Peso,
+                EstadoPaquete = paquete.EstadoPaquete,
+                FechaEnvio = paquete.FechaEnvio,
+                ClienteId = paquete.ClienteId,
+                ClienteNombre = paquete.Cliente?.Nombre ?? "Sin nombre" 
+            };
+        }
+
+        public async Task<ServiceResult> CreateAsync(PaqueteDto paqueteDto)
         {
             try
             {
-                await _paqueteRepository.AddAsync(paquete);
-                return "Paquete creado exitosamente.";
+                var paquete = new Paquete
+                {
+                    TipoPaquete = paqueteDto.TipoPaquete,
+                    Peso = paqueteDto.Peso,
+                    EstadoPaquete = paqueteDto.EstadoPaquete,
+                    FechaEnvio = paqueteDto.FechaEnvio,
+                    ClienteId = paqueteDto.ClienteId
+                };
+
+                await _repository.AddAsync(paquete);
+
+                return ServiceResult.Success("Paquete creado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al crear el paquete: {ex.Message}";
+                return ServiceResult.Failure($"Error al crear el paquete: {ex.Message}");
             }
         }
 
-        public async Task<string> UpdateAsync(int id, Paquete paquete)
+        public async Task<ServiceResult> UpdateAsync(int id, PaqueteDto paqueteDto)
         {
             try
             {
-                var existingPaquete = await _paqueteRepository.GetByIdAsync(id);
+                var existingPaquete = await _repository.GetByIdAsync(id);
 
                 if (existingPaquete == null)
-                    return $"Paquete con ID {id} no encontrado.";
+                    return ServiceResult.Failure($"Paquete con ID {id} no encontrado.");
 
-                
-                existingPaquete.Peso = paquete.Peso; // Actualiza el peso
-                existingPaquete.Descripcion = paquete.Descripcion; // Actualiza la descripción
+                existingPaquete.TipoPaquete = paqueteDto.TipoPaquete;
+                existingPaquete.Peso = paqueteDto.Peso;
+                existingPaquete.EstadoPaquete = paqueteDto.EstadoPaquete;
+                existingPaquete.FechaEnvio = paqueteDto.FechaEnvio;
+                existingPaquete.ClienteId = paqueteDto.ClienteId;
 
-                await _paqueteRepository.UpdateAsync(existingPaquete);
+                await _repository.UpdateAsync(existingPaquete);
 
-                return "Paquete actualizado exitosamente.";
+                return ServiceResult.Success("Paquete actualizado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al actualizar el paquete: {ex.Message}";
+                return ServiceResult.Failure($"Error al actualizar el paquete: {ex.Message}");
             }
         }
 
-        public async Task<string> DeleteAsync(int id)
+        public async Task<ServiceResult> DeleteAsync(int id)
         {
             try
             {
-                var paquete = await _paqueteRepository.GetByIdAsync(id);
+                var paquete = await _repository.GetByIdAsync(id);
 
                 if (paquete == null)
-                    return $"Paquete con ID {id} no encontrado.";
+                    return ServiceResult.Failure($"Paquete con ID {id} no encontrado.");
 
-                await _paqueteRepository.DeleteAsync(id);
-                return "Paquete eliminado exitosamente.";
+                await _repository.DeleteAsync(id);
+
+                return ServiceResult.Success("Paquete eliminado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al eliminar el paquete: {ex.Message}";
+                return ServiceResult.Failure($"Error al eliminar el paquete: {ex.Message}");
             }
         }
-    }
-
-    public interface IPaqueteService
-    {
-        Task<IEnumerable<Paquete>> GetAllAsync();
-        Task<Paquete?> GetByIdAsync(int id);
-        Task<string> CreateAsync(Paquete paquete);
-        Task<string> UpdateAsync(int id, Paquete paquete);
-        Task<string> DeleteAsync(int id);
     }
 }

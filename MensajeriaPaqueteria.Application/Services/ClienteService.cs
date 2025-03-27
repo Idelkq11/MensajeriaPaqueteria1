@@ -1,84 +1,102 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
+﻿using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Application.Core;
+using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.ClienteR;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Application.Services
 {
-    public class ClienteService(IClienteRepository clienteRepository) : IClienteService
+
+    public class ClienteService : BaseService, IClienteService
     {
-        private readonly IClienteRepository _clienteRepository = clienteRepository;
+        private readonly IClienteRepository _repository;
 
-        public async Task<IEnumerable<Cliente>> GetAllAsync()
+        public ClienteService(IClienteRepository repository)
         {
-            return await _clienteRepository.GetAllAsync();
+            _repository = repository;
         }
 
-        public async Task<Cliente?> GetByIdAsync(int id)
+        public async Task<IEnumerable<ClienteDto>> GetAllAsync()
         {
-            return await _clienteRepository.GetByIdAsync(id);
+            var clientes = await _repository.GetAllAsync();
+            return clientes.Select(c => new ClienteDto
+            {
+                ClienteId = c.ClienteId,
+                Nombre = c.Nombre,
+                Direccion = c.Direccion,
+                Telefono = c.Telefono
+            });
         }
 
-        public async Task<string> CreateAsync(Cliente cliente)
+        public async Task<ClienteDto?> GetByIdAsync(int id)
         {
-            try
+            var cliente = await _repository.GetByIdAsync(id);
+            if (cliente == null) return null;
+
+            return new ClienteDto
             {
-                await _clienteRepository.AddAsync(cliente);
-                return "Cliente creado exitosamente.";
-            }
-            catch (Exception ex)
-            {
-                return $"Error al crear el cliente: {ex.Message}";
-            }
+                ClienteId = cliente.ClienteId,
+                Nombre = cliente.Nombre,
+                Direccion = cliente.Direccion,
+                Telefono = cliente.Telefono
+            };
         }
 
-        public async Task<string> UpdateAsync(int id, Cliente cliente)
-        {
-            try
-            {
-                var existingCliente = await _clienteRepository.GetByIdAsync(id);
-
-                if (existingCliente == null)
-                    return $"Cliente con ID {id} no encontrado.";
-
-                existingCliente.Nombre = cliente.Nombre;
-                existingCliente.Direccion = cliente.Direccion;
-
-                await _clienteRepository.UpdateAsync(existingCliente);
-
-                return "Cliente actualizado exitosamente.";
-            }
-            catch (Exception ex)
-            {
-                return $"Error al actualizar el cliente: {ex.Message}";
-            }
-        }
-
-        public async Task<string> DeleteAsync(int id)
+        public async Task<ServiceResult> CreateAsync(ClienteDto clienteDto)
         {
             try
             {
-                var cliente = await _clienteRepository.GetByIdAsync(id);
+                var cliente = new Cliente
+                {
+                    Nombre = clienteDto.Nombre,
+                    Direccion = clienteDto.Direccion,
+                    Telefono = clienteDto.Telefono
+                };
 
-                if (cliente == null)
-                    return $"Cliente con ID {id} no encontrado.";
-
-                await _clienteRepository.DeleteAsync(id);
-                return "Cliente eliminado exitosamente.";
+                await _repository.AddAsync(cliente);
+                return ServiceResult.Success("Cliente creado exitosamente.");
             }
             catch (Exception ex)
             {
-                return $"Error al eliminar el cliente: {ex.Message}";
+                return ServiceResult.Failure($"Error al crear el cliente: {ex.Message}");
             }
         }
-    }
 
-    public interface IClienteService
-    {
-        Task<IEnumerable<Cliente>> GetAllAsync();
-        Task<Cliente?> GetByIdAsync(int id);
-        Task<string> CreateAsync(Cliente cliente);
-        Task<string> UpdateAsync(int id, Cliente cliente);
-        Task<string> DeleteAsync(int id);
+        public async Task<ServiceResult> UpdateAsync(int id, ClienteDto clienteDto)
+        {
+            try
+            {
+                var cliente = await _repository.GetByIdAsync(id);
+                if (cliente == null) return ServiceResult.Failure("Cliente no encontrado.");
+
+                cliente.Nombre = clienteDto.Nombre;
+                cliente.Direccion = clienteDto.Direccion;
+                cliente.Telefono = clienteDto.Telefono;
+
+                await _repository.UpdateAsync(cliente);
+                return ServiceResult.Success("Cliente actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Failure($"Error al actualizar el cliente: {ex.Message}");
+            }
+        }
+
+        public async Task<ServiceResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var cliente = await _repository.GetByIdAsync(id);
+                if (cliente == null) return ServiceResult.Failure("Cliente no encontrado.");
+
+                await _repository.DeleteAsync(id);
+                return ServiceResult.Success("Cliente eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Failure($"Error al eliminar el cliente: {ex.Message}");
+            }
+        }
     }
 }
+

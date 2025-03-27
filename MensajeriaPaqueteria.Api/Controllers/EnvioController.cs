@@ -1,15 +1,14 @@
-﻿using MensajeriaPaqueteria.Domain.Entities;
+﻿using MensajeriaPaqueteria.Application.Dtos;
+using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
-using MensajeriaPaqueteria.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Api.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class EnvioController : ControllerBase
     {
         private readonly IEnvioRepository _envioRepository;
@@ -20,94 +19,74 @@ namespace MensajeriaPaqueteria.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EnvioViewModel>>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
             var envios = await _envioRepository.GetAllAsync();
-            var enviosViewModel = envios.Select(e => new EnvioViewModel
-            {
-                Id = e.Id,
-                PaqueteId = e.PaqueteId,
-                ClienteId = e.ClienteId,
-                EmpleadoId = e.EmpleadoId,
-                FechaEnvio = e.FechaEnvio,
-                FechaEntrega = e.FechaEntrega,
-                Estado = e.Estado,
-                Nombre = $"{e.Cliente?.Nombre} - {e.Paquete?.Nombre}" // Ajustar según necesidad
-            });
+            if (envios == null || !envios.Any())
+                return NotFound("No se encontraron envíos.");
 
-            return Ok(enviosViewModel);
+            return Ok(envios);
         }
 
-        // Obtener un envío por ID
+        
         [HttpGet("{id}")]
-        public async Task<ActionResult<EnvioViewModel>> GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             var envio = await _envioRepository.GetByIdAsync(id);
-            if (envio == null) return NotFound("Envío no encontrado.");
+            if (envio == null)
+                return NotFound($"Envío con ID {id} no encontrado.");
 
-            var envioViewModel = new EnvioViewModel
-            {
-                Id = envio.Id,
-                PaqueteId = envio.PaqueteId,
-                ClienteId = envio.ClienteId,
-                EmpleadoId = envio.EmpleadoId,
-                FechaEnvio = envio.FechaEnvio,
-                FechaEntrega = envio.FechaEntrega,
-                Estado = envio.Estado,
-                Nombre = $"{envio.Cliente?.Nombre} - {envio.Paquete?.Nombre}"
-            };
-
-            return Ok(envioViewModel);
+            return Ok(envio);
         }
 
-        // Crear un nuevo envío
+      
         [HttpPost]
-        public async Task<ActionResult> Create(EnvioViewModel envioViewModel)
+        public async Task<IActionResult> Create([FromBody] EnvioDto envioDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var envio = new Envio
             {
-                PaqueteId = envioViewModel.PaqueteId,
-                ClienteId = envioViewModel.ClienteId,
-                EmpleadoId = envioViewModel.EmpleadoId,
-                FechaEnvio = envioViewModel.FechaEnvio,
-                FechaEntrega = envioViewModel.FechaEntrega,
-                Estado = envioViewModel.Estado
+                FechaEnvio = envioDto.FechaEnvio,
+                Direccion = envioDto.Direccion,
+                PaqueteId = envioDto.PaqueteId
             };
 
             await _envioRepository.AddAsync(envio);
-            return CreatedAtAction(nameof(GetById), new { id = envio.Id }, envioViewModel);
+            return CreatedAtAction(nameof(GetById), new { id = envio.EnvioId }, envio);
         }
 
-        // Actualizar un envío existente
         [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, EnvioViewModel envioViewModel)
+        public async Task<IActionResult> Update(int id, [FromBody] EnvioDto envioDto)
         {
-            if (id != envioViewModel.Id) return BadRequest("El ID del envío no coincide.");
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
             var existingEnvio = await _envioRepository.GetByIdAsync(id);
-            if (existingEnvio == null) return NotFound("Envío no encontrado.");
+            if (existingEnvio == null)
+                return NotFound($"Envío con ID {id} no encontrado.");
 
-            existingEnvio.PaqueteId = envioViewModel.PaqueteId;
-            existingEnvio.ClienteId = envioViewModel.ClienteId;
-            existingEnvio.EmpleadoId = envioViewModel.EmpleadoId;
-            existingEnvio.FechaEnvio = envioViewModel.FechaEnvio;
-            existingEnvio.FechaEntrega = envioViewModel.FechaEntrega;
-            existingEnvio.Estado = envioViewModel.Estado;
+            existingEnvio.FechaEnvio = envioDto.FechaEnvio;
+            existingEnvio.Direccion = envioDto.Direccion;
+            existingEnvio.PaqueteId = envioDto.PaqueteId;
 
             await _envioRepository.UpdateAsync(existingEnvio);
             return NoContent();
         }
 
-        // Eliminar un envío
+      
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var envio = await _envioRepository.GetByIdAsync(id);
-            if (envio == null) return NotFound("Envío no encontrado.");
+            if (envio == null)
+                return NotFound($"Envío con ID {id} no encontrado.");
 
             await _envioRepository.DeleteAsync(id);
             return NoContent();
         }
     }
 }
+
 
