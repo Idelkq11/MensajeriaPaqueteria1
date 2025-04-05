@@ -3,6 +3,7 @@ using MensajeriaPaqueteria.Domain.Entities;
 using MensajeriaPaqueteria.Infrastructure.Repositories.ClienteR;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Api.Controllers
@@ -55,6 +56,7 @@ namespace MensajeriaPaqueteria.Api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = cliente.ClienteId }, cliente);
         }
 
+        // ✅ Método PUT corregido
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] ClienteDto clienteDto)
         {
@@ -70,7 +72,9 @@ namespace MensajeriaPaqueteria.Api.Controllers
             existingCliente.Telefono = clienteDto.Telefono;
 
             await _clienteRepository.UpdateAsync(existingCliente);
-            return NoContent();
+
+            // ✅ Solución: Devolver el cliente actualizado en vez de NoContent()
+            return Ok(existingCliente);
         }
 
         [HttpDelete("{id}")]

@@ -59,11 +59,21 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("FechaEnvio")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("FirmaEntrega")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("PaqueteId")
                         .HasColumnType("int");
+
+                    b.Property<string>("UbicacionActual")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EnvioId");
 

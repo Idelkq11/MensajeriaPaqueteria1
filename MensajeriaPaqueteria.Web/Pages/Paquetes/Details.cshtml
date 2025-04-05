@@ -1,0 +1,25 @@
+﻿@page "{id:int}"
+@model MensajeriaPaqueteria.Web.Pages.Paquetes.DetailsModel
+@{
+    ViewData["Title"] = "Detalles del Paquete";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Tipo de Paquete</dt>
+        <dd class="col-sm-10">@Model.Paquete.TipoPaquete</dd>
+
+        <dt class="col-sm-2">Peso</dt>
+        <dd class="col-sm-10">@Model.Paquete.Peso</dd>
+
+        <dt class="col-sm-2">Estado del Paquete</dt>
+        <dd class="col-sm-10">@Model.Paquete.EstadoPaquete</dd>
+
+        <dt class="col-sm-2">Fecha de Envío</dt>
+        <dd class="col-sm-10">@Model.Paquete.FechaEnvio.ToString("yyyy-MM-dd")</dd>
+    </dl>
+</div>
+
+<a asp-page="Index" class="btn btn-secondary">Volver</a>

@@ -1,0 +1,53 @@
+﻿@page
+@model MensajeriaPaqueteria.Web.Pages.Envios.EditModel
+@{
+    ViewData["Title"] = "Editar Envío";
+}
+
+<h2>Editar Envío</h2>
+
+@if (Model.Envio == null)
+{
+    <div class="alert alert-danger">
+        <strong>Error:</strong> No se encontró el envío.
+    </div>
+}
+else
+{
+    <form method="post">
+        <input type="hidden" asp-for="Envio.EnvioId" />
+        <input type="hidden" asp-for="Envio.PaqueteId" /> <!-- Agregado para evitar problemas con FK -->
+
+        <div class="mb-3">
+            <label asp-for="Envio.FechaEnvio" class="form-label"></label>
+            <input asp-for="Envio.FechaEnvio" class="form-control" type="date" />
+            <span asp-validation-for="Envio.FechaEnvio" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Envio.Direccion" class="form-label"></label>
+            <input asp-for="Envio.Direccion" class="form-control" />
+            <span asp-validation-for="Envio.Direccion" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Envio.Estado" class="form-label"></label>
+            <select asp-for="Envio.Estado" class="form-select">
+                <option value="Pendiente">Pendiente</option>
+                <option value="En camino">En camino</option>
+                <option value="Entregado">Entregado</option>
+            </select>
+            <span asp-validation-for="Envio.Estado" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar Cambios</button>
+        <a asp-page="Index" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Cancelar</a>
+    </form>
+
+    @if (!ModelState.IsValid)
+    {
+        <div class="alert alert-danger mt-3">
+            <strong>Error:</strong> Hubo un problema al procesar la solicitud.
+        </div>
+    }
+}

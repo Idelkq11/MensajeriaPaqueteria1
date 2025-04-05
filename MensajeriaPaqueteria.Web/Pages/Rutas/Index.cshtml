@@ -1,0 +1,44 @@
+﻿@page
+@model MensajeriaPaqueteria.Web.Pages.Rutas.IndexModel
+@{
+    ViewData["Title"] = "Lista de Rutas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Agregar Ruta</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>RutaId</th>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Estado</th>
+            <th>Mensajero</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Rutas != null)
+        {
+            @foreach (var ruta in Model.Rutas)
+            {
+                <tr>
+                    <td>@ruta.RutaId</td>
+                    <td>@ruta.Origen</td>
+                    <td>@ruta.Destino</td>
+                    <td>@ruta.EstadoRuta</td>
+                    <td>@ruta.MensajeroNombre</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@ruta.RutaId" class="btn btn-info btn-sm rounded-pill">🔍 Detalles</a>
+                        <a asp-page="Edit" asp-route-id="@ruta.RutaId" class="btn btn-warning btn-sm rounded-pill text-white">✏️ Editar</a>
+                        <a asp-page="Delete" asp-route-id="@ruta.RutaId" class="btn btn-danger btn-sm rounded-pill">🗑️ Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

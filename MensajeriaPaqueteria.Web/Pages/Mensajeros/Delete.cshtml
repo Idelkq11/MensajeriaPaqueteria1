@@ -1,0 +1,31 @@
+﻿@page "{id:int}"
+@model MensajeriaPaqueteria.Web.Pages.Mensajeros.DeleteModel
+@{
+    ViewData["Title"] = "Eliminar Mensajero";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>¿Estás seguro de que deseas eliminar este mensajero?</h4>
+
+<div class="form-group">
+    <label><strong>Nombre:</strong></label>
+    <p>@Model.Mensajero.Nombre</p>
+</div>
+<div class="form-group">
+    <label><strong>Teléfono:</strong></label>
+    <p>@Model.Mensajero.Telefono</p>
+</div>
+<div class="form-group">
+    <label><strong>Vehículo:</strong></label>
+    <p>@Model.Mensajero.Vehiculo</p>
+</div>
+<div class="form-group">
+    <label><strong>Estado:</strong></label>
+    <p>@Model.Mensajero.Estado</p>
+</div>
+
+<form method="post">
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

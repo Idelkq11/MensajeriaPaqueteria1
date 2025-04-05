@@ -4,78 +4,175 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MensajeriaPaqueteria.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Bootstrap y FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MensajeriaPaqueteria.Web.styles.css" asp-append-version="true" />
+
     <style>
-        body {
-            background-color: #f4f4f4;
-            color: #212529;
+        /* Estilo general */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
         }
 
-        .navbar {
-            background-color: #007bff;
-            color: #fff;
-            margin-bottom: 20px;
+        .container {
+            flex: 1;
+            margin-bottom: 25px;
         }
-
-            .navbar a {
-                color: #fff;
-            }
-
-                .navbar a:hover {
-                    color: #d4d4d4;
-                }
 
         .footer {
-            background-color: #f8f9fa;
-            color: #212529;
-            padding: 10px;
+            background-color: white;
+            color: black;
+            padding: 9px;
             text-align: center;
+            font-size: 9px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Barra de navegación */
+        .navbar {
+            background-color: #0056b3;
+            padding: 0px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
         }
 
+            .navbar .nav-link {
+                color: white !important;
+                font-weight: 900;
+                transition: 0.3s;
+            }
+
+                .navbar .nav-link:hover {
+                    color: #f8f9fa !important;
+                    background-color: rgba(200, 200, 200, 0.2);
+                    border-radius: 3px;
+                    padding: 3px 3px;
+                }
+
+        /* Contenido principal */
         .main-content {
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding: 9px;
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;
+        }
+
+        /* Tarjetas */
+        .card {
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0,0,2);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+
+            .card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+            }
+
+      
+
+            .footer a {
+                color: black;
+            }
+
+                .footer a:hover {
+                    color: #555;
+                    text-decoration: underline;
+                }
+
+        /* Botón de modo oscuro */
+        .dark-mode-toggle {
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 15px;
+            color: white;
+        }
+
+        /* Modo oscuro */
+        .dark-mode {
+            background-color: #181818 !important;
+            color: white !important;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .dark-mode .navbar {
+                background-color: #121212;
+            }
+
+            .dark-mode .main-content {
+                background-color: #252525;
+                color: white;
+            }
+
+            .dark-mode .footer {
+                background-color: #222;
+                color: #aaa;
+            }
+
+            .dark-mode .navbar .nav-link {
+                color: white !important;
+            }
+
+        /* Efecto hover en botones */
+        .btn {
+            transition: all 0.3s ease-in-out;
+        }
+
+            .btn:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+        
+
+        /* Mapa */
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="/Index">Mensajería & Paquetería 360</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="/Home">
+                    <i class="fa-solid fa-box"></i> CargoSwift
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Index">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Clientes">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Envios">Envíos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Paquetes">Paquetes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Rutas">Rutas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Mensajeros">Mensajeros</a>
-                        </li>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="/Home"><i class="fa-solid fa-home"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Clientes"><i class="fa-solid fa-users"></i> Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Envios"><i class="fa-solid fa-truck"></i> Envíos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Paquetes"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Rutas"><i class="fa-solid fa-map"></i> Rutas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Mensajeros"><i class="fa-solid fa-motorcycle"></i> Mensajeros</a></li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/Privacy">Privacidad</a>
+                            <a class="nav-link" href="/Privacy"><i class="fa-solid fa-shield-alt"></i> Privacidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="dark-mode-toggle" id="darkModeToggle"><i class="fa-solid fa-moon"></i></span>
                         </li>
                     </ul>
                 </div>
@@ -87,16 +184,33 @@
         <main class="main-content">
             @RenderBody()
         </main>
+        <div id="map"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([18.4861, -69.9312], 13);
 
-    <footer class="footer">
-        &copy; 2025 - Mensajería & Paquetería 360 - <a href="/Privacy">Privacidad</a>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modo oscuro -->
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
 </body>
 </html>
+
+
+

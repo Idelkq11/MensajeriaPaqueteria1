@@ -1,0 +1,40 @@
+﻿@page "{id:int}"
+@model MensajeriaPaqueteria.Web.Pages.Mensajeros.EditModel
+@{
+    ViewData["Title"] = "Editar Mensajero";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <!-- Campo oculto para asegurar que el ID se envía correctamente -->
+    <input type="hidden" asp-for="Mensajero.MensajeroId" />
+
+    <div class="form-group">
+        <label asp-for="Mensajero.Nombre"></label>
+        <input asp-for="Mensajero.Nombre" class="form-control" />
+        <span asp-validation-for="Mensajero.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Mensajero.Telefono"></label>
+        <input asp-for="Mensajero.Telefono" class="form-control" />
+        <span asp-validation-for="Mensajero.Telefono" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Mensajero.Vehiculo"></label>
+        <input asp-for="Mensajero.Vehiculo" class="form-control" />
+        <span asp-validation-for="Mensajero.Vehiculo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Mensajero.Estado"></label>
+        <input asp-for="Mensajero.Estado" class="form-control" />
+        <span asp-validation-for="Mensajero.Estado" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+

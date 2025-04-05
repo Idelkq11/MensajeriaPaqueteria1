@@ -12,6 +12,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Repositories.RutaR
         Task UpdateAsync(Ruta ruta);
         Task DeleteAsync(int id);
         
+
     }
 }
 

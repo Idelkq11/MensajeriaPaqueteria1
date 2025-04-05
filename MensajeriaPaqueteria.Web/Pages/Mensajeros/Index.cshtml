@@ -1,0 +1,48 @@
+﻿@page 
+@model MensajeriaPaqueteria.Web.Pages.Mensajeros.IndexModel
+@{
+    ViewData["Title"] = "Lista de Mensajeros";
+}
+
+<h1>@ViewData["Title"]</h1>
+<a asp-page="./Create" class="btn btn-primary">➕Crear Nuevo Mensajero</a>
+
+@if (Model.Mensajero != null && Model.Mensajero.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>MensajeroId</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Vehículo</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mensajero in Model.Mensajero)
+            {
+                <tr>
+                    <td>@mensajero.MensajeroId</td>
+                    <td>@mensajero.Nombre</td>
+                    <td>@mensajero.Telefono</td>
+                    <td>@mensajero.Vehiculo</td>
+                    <td>@mensajero.Estado</td>
+                    <td>
+                        <a asp-page="./Details" asp-route-id="@mensajero.MensajeroId" class="btn btn-info btn-sm rounded-pill">🔍 Detalles</a>
+                        <a asp-page="./Edit" asp-route-id="@mensajero.MensajeroId" class="btn btn-warning btn-sm rounded-pill text-white">✏️ Editar</a>
+                        <a asp-page="./Delete" asp-route-id="@mensajero.MensajeroId" class="btn btn-danger btn rounded-pill">🗑️ Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No se han encontrado mensajeros.</p>
+}
+
+
+

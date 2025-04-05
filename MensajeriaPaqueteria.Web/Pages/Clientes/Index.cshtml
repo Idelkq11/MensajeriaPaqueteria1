@@ -1,18 +1,19 @@
-﻿@page "/Clientes/Index"
+﻿@page
 @model MensajeriaPaqueteria.Web.Pages.Clientes.IndexModel
 @{
     ViewData["Title"] = "Lista de Clientes";
 }
 
-<h1>Lista de Clientes</h1>
+<h1 class="text-primary">Lista de Clientes</h1>
 
 <p>
-    <a asp-page="Create" class="btn btn-primary">Agregar Cliente</a>
+    <a asp-page="Create" class="btn btn-success shadow-sm">➕ Agregar Cliente</a>
 </p>
 
-<table class="table table-striped">
-    <thead>
+<table class="table table-hover shadow-sm">
+    <thead class="table-dark">
         <tr>
+            <th>ClienteId</th>
             <th>Nombre</th>
             <th>Dirección</th>
             <th>Teléfono</th>
@@ -23,16 +24,16 @@
         @foreach (var cliente in Model.Clientes)
         {
             <tr>
+                <td>@cliente.ClienteId</td>
                 <td>@cliente.Nombre</td>
                 <td>@cliente.Direccion</td>
                 <td>@cliente.Telefono</td>
                 <td>
-                    <a asp-page="Details" asp-route-id="@cliente.ClienteId" class="btn btn-info btn-sm">Detalles</a>
-                    <a asp-page="Edit" asp-route-id="@cliente.ClienteId" class="btn btn-warning btn-sm">Editar</a>
-                    <a asp-page="Delete" asp-route-id="@cliente.ClienteId" class="btn btn-danger btn-sm">Eliminar</a>
+                    <a asp-page="Details" asp-route-id="@cliente.ClienteId" class="btn btn-info btn-sm rounded-pill">🔍 Detalles</a>
+                    <a asp-page="Edit" asp-route-id="@cliente.ClienteId" class="btn btn-warning btn-sm rounded-pill text-white">✏️ Editar</a>
+                    <a asp-page="Delete" asp-route-id="@cliente.ClienteId" class="btn btn-danger btn-sm rounded-pill">🗑️ Eliminar</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-

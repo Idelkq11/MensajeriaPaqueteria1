@@ -255,6 +255,132 @@
         }
       }
     },
+    "/api/Envio/{id}/estado": {
+      "put": {
+        "tags": [
+          "Envio"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Envio/{id}/ubicacion": {
+      "put": {
+        "tags": [
+          "Envio"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Envio/{id}/confirmar-entrega": {
+      "put": {
+        "tags": [
+          "Envio"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Mensajero": {
       "get": {
         "tags": [
@@ -656,6 +782,12 @@
         "additionalProperties": false
       },
       "EnvioDto": {
+        "required": [
+          "direccion",
+          "estado",
+          "fechaEnvio",
+          "paqueteId"
+        ],
         "type": "object",
         "properties": {
           "envioId": {
@@ -667,14 +799,27 @@
             "format": "date-time"
           },
           "direccion": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
           },
           "paqueteId": {
             "type": "integer",
             "format": "int32"
           },
           "paqueteTipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "ubicacionActual": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "firmaEntrega": {
             "type": "string",
             "nullable": true
           }
@@ -733,10 +878,6 @@
           "clienteId": {
             "type": "integer",
             "format": "int32"
-          },
-          "clienteNombre": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

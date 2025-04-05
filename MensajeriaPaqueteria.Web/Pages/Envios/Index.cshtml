@@ -1,0 +1,63 @@
+﻿@page
+@model MensajeriaPaqueteria.Web.Pages.Envios.IndexModel
+@{
+    ViewData["Title"] = "Lista de Envíos";
+}
+
+<h1>Lista de Envíos</h1>
+
+<p>
+    <a asp-page="/Envios/Create" class="btn btn-primary">➕Agregar Envío</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>EnvioId</th>
+            <th>Fecha de Envío</th>
+            <th>Dirección</th>
+            <th>Paquete ID</th>
+            <th>Ubicación Actual</th>
+            <th>Estado</th>
+            <th>Firma de Entrega</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Envios != null && Model.Envios.Any())
+        {
+            foreach (var envio in Model.Envios)
+            {
+                <tr>
+                    <td>@envio.EnvioId</td>
+                    <td>@envio.FechaEnvio.ToString("dd/MM/yyyy")</td>
+                    <td>@envio.Direccion</td>
+                    <td>@envio.PaqueteId</td>
+                    <td>@envio.UbicacionActual</td>
+                    <td>@envio.Estado</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(envio.FirmaEntrega))
+                        {
+                            <img src="data:image/png;base64,@envio.FirmaEntrega" alt="Firma" width="50" height="50" />
+                        }
+                        else
+                        {
+                            <span>No disponible</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-page="/Envios/Details" asp-route-id="@envio.EnvioId" class="btn btn-info btn-sm rounded-pill">🔍 Detalles</a>
+                        <a asp-page="/Envios/Edit" asp-route-id="@envio.EnvioId" class="btn btn-warning btn-sm rounded-pill text-white">✏️ Editar</a>
+                        <a asp-page="/Envios/Delete" asp-route-id="@envio.EnvioId" class="btn btn-danger btn-sm rounded-pill">🗑️ Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center">No se encontraron envíos.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,43 @@
+﻿@page
+@model MensajeriaPaqueteria.Web.Pages.Rutas.CreateModel
+@{
+    ViewData["Title"] = "Crear Ruta";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Ruta.Origen" class="form-label">Origen</label>
+        <input asp-for="Ruta.Origen" class="form-control" required />
+        <span asp-validation-for="Ruta.Origen" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ruta.Destino" class="form-label">Destino</label>
+        <input asp-for="Ruta.Destino" class="form-control" required />
+        <span asp-validation-for="Ruta.Destino" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ruta.EstadoRuta" class="form-label">Estado</label>
+        <select asp-for="Ruta.EstadoRuta" class="form-control">
+            <option value="Pendiente">Pendiente</option>
+            <option value="En tránsito">En tránsito</option>
+            <option value="Entregado">Entregado</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ruta.MensajeroId" class="form-label">Mensajero</label>
+        <select asp-for="Ruta.MensajeroId" class="form-control">
+            @foreach (var mensajero in Model.Mensajeros)
+            {
+                <option value="@mensajero.MensajeroId">@mensajero.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

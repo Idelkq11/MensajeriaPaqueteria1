@@ -16,5 +16,6 @@ namespace MensajeriaPaqueteria.Application.Contract
         Task<ServiceResult> CreateAsync(PaqueteDto paqueteDto);
         Task<ServiceResult> UpdateAsync(int id, PaqueteDto paqueteDto);
         Task<ServiceResult> DeleteAsync(int id);
+        Task UpdateAsync(PaqueteDto existingPaquete);
     }
 }

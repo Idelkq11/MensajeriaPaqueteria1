@@ -28,7 +28,7 @@ namespace MensajeriaPaqueteria.Application.Services
                 EstadoPaquete = p.EstadoPaquete,
                 FechaEnvio = p.FechaEnvio,
                 ClienteId = p.ClienteId,
-                ClienteNombre = p.Cliente?.Nombre ?? "Sin nombre" 
+               
             });
         }
 
@@ -47,7 +47,7 @@ namespace MensajeriaPaqueteria.Application.Services
                 EstadoPaquete = paquete.EstadoPaquete,
                 FechaEnvio = paquete.FechaEnvio,
                 ClienteId = paquete.ClienteId,
-                ClienteNombre = paquete.Cliente?.Nombre ?? "Sin nombre" 
+             
             };
         }
 
@@ -116,6 +116,11 @@ namespace MensajeriaPaqueteria.Application.Services
             {
                 return ServiceResult.Failure($"Error al eliminar el paquete: {ex.Message}");
             }
+        }
+
+        public Task UpdateAsync(PaqueteDto existingPaquete)
+        {
+            throw new NotImplementedException();
         }
     }
 }

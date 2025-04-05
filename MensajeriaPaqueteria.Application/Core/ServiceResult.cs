@@ -6,8 +6,8 @@ namespace MensajeriaPaqueteria.Application.Core
     {
         public bool IsSuccess { get; set; }
         public string Message { get; set; } = string.Empty;
+        public object UpdatedEntity { get; set; }
 
-        
         public static ServiceResult Success(string message = "Operacion exitosa.")
         {
             return new ServiceResult { IsSuccess = true, Message = message };

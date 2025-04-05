@@ -1,44 +1,60 @@
-using MensajeriaPaqueteria.Application.Dtos;
-using MensajeriaPaqueteria.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MensajeriaPaqueteria.Web.Services;
+using MensajeriaPaqueteria.Application.Dtos;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Web.Pages.Clientes
 {
-    public class CreateModel(ApiService apiService) : PageModel
+    public class CreateModel : PageModel
     {
-        private readonly ApiService _apiService = apiService;
+        private readonly ApiService _apiService;
 
         [BindProperty]
         public ClienteDto Cliente { get; set; } = new ClienteDto();
 
-        public string? ErrorMessage { get; set; }
+        public List<PaqueteDto> Paquetes { get; set; }
+        public List<MensajeroDto> Mensajero { get; set; }
 
-        // Acción para procesar el POST
+        public CreateModel(ApiService apiService)
+        {
+            _apiService = apiService;
+        }
+
+        public async Task OnGetAsync()
+        {
+            // Obtener listas de datos antes de mostrar la vista
+            Paquetes = await _apiService.GetAsync<List<PaqueteDto>>("Paquetes");
+            Mensajero= await _apiService.GetAsync<List<MensajeroDto>>("Mensajero");
+        }
+
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
-                // Si el modelo no es válido, volvemos a mostrar la página
                 return Page();
             }
 
-            try
-            {
-                // Llamamos al servicio API para crear el cliente
-                await _apiService.PostAsync<ClienteDto>("api/Cliente", Cliente);
 
-                // Redirigimos a la página de lista de clientes después de crear el cliente
-                return RedirectToPage("/Clientes/Index");
-            }
-            catch (Exception ex)
-            {
-                // Si ocurre un error, mostramos un mensaje
-                ErrorMessage = $"Hubo un error al crear el cliente: {ex.Message}";
-                return Page();
-            }
+
+            await _apiService.PostAsync<ClienteDto>("Cliente", Cliente);
+            return RedirectToPage("Index");
         }
     }
 }
+
+
+
+
+     
+   
+
+  
+
+            
+
+            
+   
+
 

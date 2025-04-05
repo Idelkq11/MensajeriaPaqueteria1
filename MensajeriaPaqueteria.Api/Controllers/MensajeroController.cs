@@ -19,11 +19,11 @@ namespace MensajeriaPaqueteria.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var mensajeros = await _mensajeroRepository.GetAllAsync();
-            if (mensajeros == null || !mensajeros.Any())
+            var mensajero = await _mensajeroRepository.GetAllAsync();
+            if (mensajero == null || !mensajero.Any())
                 return NotFound("No se encontraron mensajeros.");
 
-            return Ok(mensajeros);
+            return Ok(mensajero);
         }
 
         

@@ -1,0 +1,24 @@
+﻿@page "{id:int}"
+@model MensajeriaPaqueteria.Web.Pages.Rutas.DetailsModel
+
+@{
+    ViewData["Title"] = "Detalles de la Ruta";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Información de la Ruta</h5>
+        <p><strong>ID:</strong> @Model.Ruta.RutaId</p>
+        <p><strong>Origen:</strong> @Model.Ruta.Origen</p>
+        <p><strong>Destino:</strong> @Model.Ruta.Destino</p>
+        <p><strong>Estado:</strong> @Model.Ruta.EstadoRuta</p>
+        <p><strong>Mensajero:</strong> @Model.Ruta.MensajeroNombre</p>
+    </div>
+</div>
+
+<a asp-page="Index" class="btn btn-secondary mt-3">Volver a la lista</a>
+<a asp-page="Edit" asp-route-id="@Model.Ruta.RutaId" class="btn btn-warning mt-3">Editar</a>
+<a asp-page="Delete" asp-route-id="@Model.Ruta.RutaId" class="btn btn-danger mt-3">Eliminar</a>
+

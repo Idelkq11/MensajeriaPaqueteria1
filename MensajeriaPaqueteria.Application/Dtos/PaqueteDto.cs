@@ -13,6 +13,6 @@ namespace MensajeriaPaqueteria.Application.Dtos
         public string EstadoPaquete { get; set; } = string.Empty;  
         public DateTime FechaEnvio { get; set; }
         public int ClienteId { get; set; }
-        public string ClienteNombre { get; set; } = string.Empty;  
+         
     }
 }

@@ -8,20 +8,20 @@ using MensajeriaPaqueteria.Infrastructure.Repositories.MensajeroR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.PaqueteR;
 using MensajeriaPaqueteria.Infrastructure.Repositories.RutaR;
+using Microsoft.AspNetCore.SignalR;
+using MensajeriaPaqueteria.Web.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddRazorPages();
 
-
+// Configuración de la base de datos
 builder.Services.AddDbContext<MensajeriaPaqueteriaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MensajeriaPaqueteriaDbs")));
 
-
 builder.Services.AddScoped<ApiService>();
 
-
+// Repositorios y servicios
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IMensajeroRepository, MensajeroRepository>();
 builder.Services.AddScoped<IRutaRepository, RutaRepository>();
@@ -34,9 +34,8 @@ builder.Services.AddScoped<IRutaService, RutaService>();
 builder.Services.AddScoped<IPaqueteService, PaqueteService>();
 builder.Services.AddScoped<IEnvioService, EnvioService>();
 
-
-
-
+// Configuración de SignalR
+builder.Services.AddSignalR();
 
 builder.Services.AddHttpClient("ApiClient", client =>
 {
@@ -47,25 +46,18 @@ builder.Services.AddHttpClient("ApiClient", client =>
     }
 });
 
-
 builder.Services.AddHttpsRedirection(options =>
 {
-    options.HttpsPort = 7162; 
-
-  
+    options.HttpsPort = 7162;
 });
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     options.Cookie.SameSite = SameSiteMode.Strict;
 });
 
-
 var app = builder.Build();
-
-
-
 
 if (!app.Environment.IsDevelopment())
 {
@@ -79,14 +71,15 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-
+// Configuración de rutas de SignalR
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapRazorPages();
     endpoints.MapFallbackToPage("/Home");
+    endpoints.MapHub<TrackingHub>("/trackingHub");  // Aquí es donde mapeas el Hub
 });
 
-
+// Inicialización de la base de datos
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<MensajeriaPaqueteriaDbContext>();

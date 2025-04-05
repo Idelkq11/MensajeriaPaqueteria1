@@ -48,6 +48,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Envios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW52aW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Envios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW52aW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Envios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW52aW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Envios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW52aW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Envios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW52aW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,12 +76,68 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Mensajeros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FqZXJvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Mensajeros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FqZXJvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Mensajeros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FqZXJvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Mensajeros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FqZXJvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Mensajeros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVuc2FqZXJvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Paquetes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFxdWV0ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Paquetes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFxdWV0ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Paquetes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFxdWV0ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Paquetes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFxdWV0ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Paquetes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFxdWV0ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Rutas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnV0YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Rutas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnV0YXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Rutas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnV0YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Rutas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnV0YXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Rutas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnV0YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/ProyectoMensajeriaPaqueteria/MensajeriaPaqueteria1/MensajeriaPaqueteria.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]

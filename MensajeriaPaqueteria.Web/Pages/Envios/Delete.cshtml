@@ -1,0 +1,29 @@
+﻿@page "{id:int}"
+@model MensajeriaPaqueteria.Web.Pages.Envios.DeleteModel
+@{
+    ViewData["Title"] = "Eliminar Envío";
+}
+
+<h1>Eliminar Envío</h1>
+
+<p>¿Está seguro de que desea eliminar el siguiente envío?</p>
+
+<table class="table">
+    <tr>
+        <th>Fecha de Envío</th>
+        <td>@Model.Envio.FechaEnvio</td>
+    </tr>
+    <tr>
+        <th>Dirección</th>
+        <td>@Model.Envio.Direccion</td>
+    </tr>
+    <tr>
+        <th>Paquete ID</th>
+        <td>@Model.Envio.PaqueteId</td>
+    </tr>
+</table>
+
+<form method="post">
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+</form>

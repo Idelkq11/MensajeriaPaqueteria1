@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dKYY/H5UzI6Bq7F09YuOLUzDEvLxenWMMNcNU3mX3iU=",
+  "Hash": "fULOUwHOzZ2J4oUaSnDjU6tYQT/EKScGkrcTLlw/30s=",
   "Source": "MensajeriaPaqueteria.Web",
   "BasePath": "_content/MensajeriaPaqueteria.Web",
   "Mode": "Default",
@@ -1352,8 +1352,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "bpaek2duyx",
+      "Integrity": "UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -14302,7 +14302,7 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.bpaek2duyx.css",
       "AssetFile": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -14312,7 +14312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1717"
         },
         {
           "Name": "Content-Type",
@@ -14320,11 +14320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 17:01:30 GMT"
+          "Value": "Fri, 04 Apr 2025 14:03:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14334,7 +14334,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "bpaek2duyx"
         },
         {
           "Name": "label",
@@ -14342,7 +14342,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc="
         }
       ]
     },
@@ -14357,7 +14357,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1717"
         },
         {
           "Name": "Content-Type",
@@ -14365,11 +14365,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 17:01:30 GMT"
+          "Value": "Fri, 04 Apr 2025 14:03:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14379,7 +14379,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc="
         }
       ]
     },

@@ -10,11 +10,16 @@ using AutoMapper;
 using MensajeriaPaqueteria.Api.Mappings;
 using MensajeriaPaqueteria.Application.Contract;
 using MensajeriaPaqueteria.Application.Services;
+using MensajeriaPaqueteria.Api.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR();
+
+
+
 
 var Configuration = builder.Configuration;
 
@@ -83,6 +88,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapHub<TrackingHub>("/trackingHub"); // ruta del hub
 
 
 app.MapControllers();

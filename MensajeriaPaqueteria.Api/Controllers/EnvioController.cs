@@ -1,8 +1,8 @@
-﻿using MensajeriaPaqueteria.Application.Dtos;
-using MensajeriaPaqueteria.Domain.Entities;
-using MensajeriaPaqueteria.Infrastructure.Repositories.EnvioR;
+﻿using Microsoft.AspNetCore.SignalR;
+using MensajeriaPaqueteria.Api.Hubs;
+using MensajeriaPaqueteria.Application.Contract;
+using MensajeriaPaqueteria.Application.Dtos;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MensajeriaPaqueteria.Api.Controllers
@@ -11,50 +11,39 @@ namespace MensajeriaPaqueteria.Api.Controllers
     [ApiController]
     public class EnvioController : ControllerBase
     {
-        private readonly IEnvioRepository _envioRepository;
+        private readonly IHubContext<TrackingHub> _hubContext;
+        private readonly IEnvioService _envioService;
 
-        public EnvioController(IEnvioRepository envioRepository)
+        public EnvioController(IHubContext<TrackingHub> hubContext, IEnvioService envioService)
         {
-            _envioRepository = envioRepository;
+            _hubContext = hubContext;
+            _envioService = envioService;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var envios = await _envioRepository.GetAllAsync();
-            if (envios == null || !envios.Any())
-                return NotFound("No se encontraron envíos.");
-
-            return Ok(envios);
+            var envios = await _envioService.GetAllAsync();
+            return envios == null ? NotFound("No se encontraron envíos.") : Ok(envios);
         }
 
-        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var envio = await _envioRepository.GetByIdAsync(id);
-            if (envio == null)
-                return NotFound($"Envío con ID {id} no encontrado.");
-
-            return Ok(envio);
+            var envio = await _envioService.GetByIdAsync(id);
+            return envio == null ? NotFound($"Envío con ID {id} no encontrado.") : Ok(envio);
         }
 
-      
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] EnvioDto envioDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var envio = new Envio
-            {
-                FechaEnvio = envioDto.FechaEnvio,
-                Direccion = envioDto.Direccion,
-                PaqueteId = envioDto.PaqueteId
-            };
-
-            await _envioRepository.AddAsync(envio);
-            return CreatedAtAction(nameof(GetById), new { id = envio.EnvioId }, envio);
+            var result = await _envioService.CreateAsync(envioDto);
+            return result.IsSuccess
+                ? CreatedAtAction(nameof(GetById), new { id = envioDto.EnvioId }, envioDto)
+                : BadRequest(result.Message);
         }
 
         [HttpPut("{id}")]
@@ -63,30 +52,66 @@ namespace MensajeriaPaqueteria.Api.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var existingEnvio = await _envioRepository.GetByIdAsync(id);
-            if (existingEnvio == null)
-                return NotFound($"Envío con ID {id} no encontrado.");
+            if (id != envioDto.EnvioId)
+                return BadRequest("El ID del envío en la URL no coincide con el del cuerpo de la solicitud.");
 
-            existingEnvio.FechaEnvio = envioDto.FechaEnvio;
-            existingEnvio.Direccion = envioDto.Direccion;
-            existingEnvio.PaqueteId = envioDto.PaqueteId;
+            var result = await _envioService.UpdateAsync(id, envioDto);
 
-            await _envioRepository.UpdateAsync(existingEnvio);
-            return NoContent();
+            if (result.IsSuccess)
+            {
+                await _hubContext.Clients.All.SendAsync("ReceiveUpdate", id.ToString(), "Actualizado");
+                return Ok(result.Message);
+            }
+
+            return NotFound(result.Message);
         }
 
-      
+        // Este es el método que debería estar bien mapeado
+        [HttpPut("{id}/estado")]
+        public async Task<IActionResult> CambiarEstado(int id, [FromBody] string nuevoEstado)
+        {
+            var result = await _envioService.CambiarEstadoAsync(id, nuevoEstado);
+
+            if (result.IsSuccess)
+            {
+                await _hubContext.Clients.All.SendAsync("ReceiveUpdate", id.ToString(), nuevoEstado);
+                return Ok(result.Message);
+            }
+
+            return NotFound(result.Message);
+        }
+
+        [HttpPut("{id}/ubicacion")]
+        public async Task<IActionResult> ActualizarUbicacion(int id, [FromBody] string nuevaUbicacion)
+        {
+            var result = await _envioService.ActualizarUbicacionAsync(id, nuevaUbicacion);
+            if (result.IsSuccess)
+            {
+                await _hubContext.Clients.All.SendAsync("ReceiveUpdate", id.ToString(), nuevaUbicacion);
+                return Ok(result.Message);
+            }
+
+            return NotFound(result.Message);
+        }
+
+        [HttpPut("{id}/confirmar-entrega")]
+        public async Task<IActionResult> ConfirmarEntrega(int id, [FromBody] string firmaBase64)
+        {
+            var result = await _envioService.ConfirmarEntregaAsync(id, firmaBase64);
+            if (result.IsSuccess)
+            {
+                await _hubContext.Clients.All.SendAsync("ReceiveUpdate", id.ToString(), "Entregado");
+                return Ok(result.Message);
+            }
+
+            return NotFound(result.Message);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var envio = await _envioRepository.GetByIdAsync(id);
-            if (envio == null)
-                return NotFound($"Envío con ID {id} no encontrado.");
-
-            await _envioRepository.DeleteAsync(id);
-            return NoContent();
+            var result = await _envioService.DeleteAsync(id);
+            return result.IsSuccess ? NoContent() : NotFound(result.Message);
         }
     }
 }
-
-

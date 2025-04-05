@@ -1,22 +1,71 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
+/* Botón Agregar (Verde Menta) */
+.btn-add {
+    background-color: #2ECC71!important; /* Verde Menta */
+    color: white!important;
+    border-radius: 8px;
+    padding: 8px 16px;
     font-size: 16px;
-  }
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    .btn-add:hover {
+        background-color: #27AE60 !important; /* Verde más oscuro */
+    }
+
+/* Botón Detalles (Púrpura Real) */
+.btn-details {
+    background-color: #8E44AD !important; 
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+    .btn-details:hover {
+        background-color: #6C3483 !important; 
+    }
+
+/* Botón Editar (Azul Eléctrico) */
+.btn-edit {
+    background-color: #2980B9 !important; /* Azul vibrante */
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-body {
-  margin-bottom: 60px;
+    .btn-edit:hover {
+        background-color: #1F618D !important; /* Azul más oscuro */
+    }
+
+/* Botón Eliminar (Rojo Carmesí) */
+.btn-delete {
+    background-color: #C0392B !important; /* Rojo Carmesí */
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
+
+    .btn-delete:hover {
+        background-color: #922B21 !important; /* Rojo más oscuro */
+    }
+
+
+
+

@@ -1,0 +1,44 @@
+﻿@page 
+@model MensajeriaPaqueteria.Web.Pages.Paquetes.IndexModel
+@{
+    ViewData["Title"] = "Lista de Paquetes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Agregar Paquete</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>PaqueteId</th>
+            <th>Tipo de Paquete</th>
+            <th>Peso</th>
+            <th>Estado</th>
+            <th>Fecha de Envío</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Paquetes != null)
+        {
+            foreach (var paquete in Model.Paquetes)
+            {
+                <tr>
+                    <td>@paquete.PaqueteId</td>
+                    <td>@paquete.TipoPaquete</td>
+                    <td>@paquete.Peso</td>
+                    <td>@paquete.EstadoPaquete</td>
+                    <td>@paquete.FechaEnvio.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@paquete.PaqueteId" class="btn btn-info btn-sm rounded-pill">🔍 Detalles</a>
+                        <a asp-page="Edit" asp-route-id="@paquete.PaqueteId" class="btn btn-warning btn-sm rounded-pill text-white">✏️ Editar</a>
+                        <a asp-page="Delete" asp-route-id="@paquete.PaqueteId" class="btn btn-danger btn-sm rounded-pill">🗑️ Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
