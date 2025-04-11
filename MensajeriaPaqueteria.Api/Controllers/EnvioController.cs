@@ -69,6 +69,7 @@ namespace MensajeriaPaqueteria.Api.Controllers
         // Este es el método que debería estar bien mapeado
         [HttpPut("{id}/estado")]
         public async Task<IActionResult> CambiarEstado(int id, [FromBody] string nuevoEstado)
+
         {
             var result = await _envioService.CambiarEstadoAsync(id, nuevoEstado);
 

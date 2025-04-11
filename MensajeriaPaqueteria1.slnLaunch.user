@@ -3,14 +3,12 @@
     "Name": "Nuevo perfil",
     "Projects": [
       {
-        "Path": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
+        "Path": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
+        "Action": "Start"
       },
       {
-        "Path": "MensajeriaPaqueteria.Api\\MensajeriaPaqueteria.Api.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
+        "Path": "MensajeriaPaqueteria.Web\\MensajeriaPaqueteria.Web.csproj",
+        "Action": "Start"
       }
     ]
   }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MensajeriaPaqueteria.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+089336a784c15cbe4d358d635445e0a8b9f666b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d4fc95e9582c03465fdf06c9da17481821c5ff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MensajeriaPaqueteria.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MensajeriaPaqueteria.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

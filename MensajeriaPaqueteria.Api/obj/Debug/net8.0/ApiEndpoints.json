@@ -456,5 +456,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MensajeriaPaqueteria.Web.Controllers.UbicacionController",
+    "Method": "ActualizarUbicacion",
+    "RelativePath": "api/Ubicacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UbicacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MensajeriaPaqueteria.Web.Controllers.UbicacionController",
+    "Method": "ObtenerUbicacionActual",
+    "RelativePath": "api/Ubicacion/{mensajeroId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mensajeroId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

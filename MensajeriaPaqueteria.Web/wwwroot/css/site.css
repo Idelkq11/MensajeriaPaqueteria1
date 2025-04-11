@@ -1,6 +1,6 @@
-/* Botón Agregar (Verde Menta) */
+
 .btn-add {
-    background-color: #2ECC71!important; /* Verde Menta */
+    background-color: #2ECC71!important; 
     color: white!important;
     border-radius: 8px;
     padding: 8px 16px;
@@ -12,10 +12,10 @@
 }
 
     .btn-add:hover {
-        background-color: #27AE60 !important; /* Verde más oscuro */
+        background-color: #27AE60 !important;
     }
 
-/* Botón Detalles (Púrpura Real) */
+
 .btn-details {
     background-color: #8E44AD !important; 
     color: white !important;
@@ -32,9 +32,9 @@
         background-color: #6C3483 !important; 
     }
 
-/* Botón Editar (Azul Eléctrico) */
+
 .btn-edit {
-    background-color: #2980B9 !important; /* Azul vibrante */
+    background-color: #2980B9 !important; 
     color: white !important;
     border-radius: 8px;
     padding: 8px 16px;
@@ -46,12 +46,11 @@
 }
 
     .btn-edit:hover {
-        background-color: #1F618D !important; /* Azul más oscuro */
+        background-color: #1F618D !important; 
     }
 
-/* Botón Eliminar (Rojo Carmesí) */
 .btn-delete {
-    background-color: #C0392B !important; /* Rojo Carmesí */
+    background-color: #C0392B !important; 
     color: white !important;
     border-radius: 8px;
     padding: 8px 16px;
@@ -63,7 +62,7 @@
 }
 
     .btn-delete:hover {
-        background-color: #922B21 !important; /* Rojo más oscuro */
+        background-color: #922B21 !important; 
     }
 
 

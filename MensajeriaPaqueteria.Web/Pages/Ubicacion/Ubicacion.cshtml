@@ -1,0 +1,58 @@
+﻿@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([18.4861, -69.9312], 13); // Santo Domingo
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var marker = L.marker([18.4861, -69.9312]).addTo(map);
+
+        function obtenerYEnviarUbicacion() {
+            if (!navigator.geolocation) {
+                alert("Tu navegador no soporta geolocalización.");
+                return;
+            }
+
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+
+                    // Mostrar en el mapa
+                    marker.setLatLng([lat, lon]).update();
+                    map.setView([lat, lon], 16);
+
+                var mensajeroId = @Model.MensajeroId;
+
+                    // Enviar al backend
+                    var data = {
+                        MensajeroId: mensajeroId, // Asegúrate de que este sea dinámico si es necesario
+                        Latitud: lat,
+                        Longitud: lon
+                    };
+
+                    console.log("Enviando ubicación:", data);
+
+                    fetch('/api/ubicacion', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    }).catch(err => console.error("Error al enviar:", err));
+                },
+                function (error) {
+                    console.error("Error obteniendo ubicación:", error.message);
+                    alert("Error: " + error.message);
+                }
+            );
+        }
+
+        // Repetir cada 10 segundos
+        setInterval(obtenerYEnviarUbicacion, 10000);
+        // También llamar al iniciar
+        obtenerYEnviarUbicacion();
+    </script>
+}

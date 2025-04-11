@@ -13,10 +13,11 @@
     </div>
 }
 else
+
 {
     <form method="post">
         <input type="hidden" asp-for="Envio.EnvioId" />
-        <input type="hidden" asp-for="Envio.PaqueteId" /> <!-- Agregado para evitar problemas con FK -->
+        <input type="hidden" asp-for="Envio.PaqueteId" />
 
         <div class="mb-3">
             <label asp-for="Envio.FechaEnvio" class="form-label"></label>
@@ -32,12 +33,26 @@ else
 
         <div class="mb-3">
             <label asp-for="Envio.Estado" class="form-label"></label>
-            <select asp-for="Envio.Estado" class="form-select">
+            <select asp-for="Envio.Estado" class="form-select" id="estadoSelect">
                 <option value="Pendiente">Pendiente</option>
                 <option value="En camino">En camino</option>
                 <option value="Entregado">Entregado</option>
             </select>
             <span asp-validation-for="Envio.Estado" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Envio.UbicacionActual" class="form-label"></label>
+            <input asp-for="Envio.UbicacionActual" class="form-control" />
+            <span asp-validation-for="Envio.UbicacionActual" class="text-danger"></span>
+        </div>
+
+
+        <!-- Firma de entrega (solo visible si el estado es Entregado) -->
+        <div class="mb-3" id="firmaContainer" style="display: none;">
+            <label asp-for="Envio.FirmaEntrega" class="form-label"></label>
+            <input asp-for="Envio.FirmaEntrega" class="form-control" />
+            <span asp-validation-for="Envio.FirmaEntrega" class="text-danger"></span>
         </div>
 
         <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar Cambios</button>
@@ -50,4 +65,20 @@ else
             <strong>Error:</strong> Hubo un problema al procesar la solicitud.
         </div>
     }
+}
+
+@section Scripts {
+    <script>
+        function toggleFirmaEntrega() {
+            const estado = document.getElementById("estadoSelect").value;
+            const firmaContainer = document.getElementById("firmaContainer");
+            firmaContainer.style.display = estado === "Entregado" ? "block" : "none";
+        }
+
+        // Mostrar u ocultar al cargar la página
+        window.onload = toggleFirmaEntrega;
+
+        // Mostrar u ocultar al cambiar el estado
+        document.getElementById("estadoSelect").addEventListener("change", toggleFirmaEntrega);
+    </script>
 }

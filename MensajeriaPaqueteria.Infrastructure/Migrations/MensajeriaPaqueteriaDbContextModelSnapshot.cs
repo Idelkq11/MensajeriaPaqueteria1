@@ -143,6 +143,33 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                     b.ToTable("Paquetes");
                 });
 
+            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ubicacion", b =>
+                {
+                    b.Property<int>("UbicacionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UbicacionId"));
+
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Latitud")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Longitud")
+                        .HasColumnType("float");
+
+                    b.Property<int>("MensajeroId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UbicacionId");
+
+                    b.HasIndex("MensajeroId");
+
+                    b.ToTable("Ubicaciones");
+                });
+
             modelBuilder.Entity("Ruta", b =>
                 {
                     b.Property<int>("RutaId")
@@ -193,6 +220,17 @@ namespace MensajeriaPaqueteria.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("MensajeriaPaqueteria.Domain.Entities.Ubicacion", b =>
+                {
+                    b.HasOne("MensajeriaPaqueteria.Domain.Entities.Mensajero", "Mensajero")
+                        .WithMany()
+                        .HasForeignKey("MensajeroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Mensajero");
                 });
 
             modelBuilder.Entity("Ruta", b =>

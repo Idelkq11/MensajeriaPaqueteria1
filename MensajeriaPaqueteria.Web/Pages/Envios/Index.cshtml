@@ -61,3 +61,26 @@
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("https://localhost:7051/trackingHub") // Cambia el puerto si el tuyo es otro
+            .build();
+
+        connection.start()
+            .then(() => {
+                console.log("✅ Conectado al hub SignalR");
+            })
+            .catch(err => console.error("❌ Error al conectar al hub:", err));
+
+        connection.on("ReceiveUpdate", function (envioId, nuevoEstado) {
+            alert("📦 El envío #" + envioId + " fue actualizado. Nuevo estado: " + nuevoEstado);
+            location.reload(); // Recarga la página para mostrar cambios actualizados
+        });
+    </script>
+}
+
+

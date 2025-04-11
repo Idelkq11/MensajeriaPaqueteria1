@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fULOUwHOzZ2J4oUaSnDjU6tYQT/EKScGkrcTLlw/30s=",
+  "Hash": "xJI2FwSxBQ88d3DRyVRsX+fy6FGe2yzxeZUYr5NN12o=",
   "Source": "MensajeriaPaqueteria.Web",
   "BasePath": "_content/MensajeriaPaqueteria.Web",
   "Mode": "Default",
@@ -1352,8 +1352,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bpaek2duyx",
-      "Integrity": "UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=",
+      "Fingerprint": "sbblf2nf4u",
+      "Integrity": "aOyun8Wj4Tbgu4BvLFoVcRxIFanOOnXFLs3+qjPgoB4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -14302,51 +14302,6 @@
       ]
     },
     {
-      "Route": "css/site.bpaek2duyx.css",
-      "AssetFile": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1717"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 14:03:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bpaek2duyx"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -14357,7 +14312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1717"
+          "Value": "1459"
         },
         {
           "Name": "Content-Type",
@@ -14365,11 +14320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc=\""
+          "Value": "\"aOyun8Wj4Tbgu4BvLFoVcRxIFanOOnXFLs3+qjPgoB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 14:03:30 GMT"
+          "Value": "Sat, 05 Apr 2025 03:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14379,7 +14334,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UaZaPIONJSLS48pjZByY8H3xJaKi9rdjSg3Lan95ITc="
+          "Value": "sha256-aOyun8Wj4Tbgu4BvLFoVcRxIFanOOnXFLs3+qjPgoB4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.sbblf2nf4u.css",
+      "AssetFile": "C:\\ProyectoMensajeriaPaqueteria\\MensajeriaPaqueteria1\\MensajeriaPaqueteria.Web\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aOyun8Wj4Tbgu4BvLFoVcRxIFanOOnXFLs3+qjPgoB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 03:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sbblf2nf4u"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aOyun8Wj4Tbgu4BvLFoVcRxIFanOOnXFLs3+qjPgoB4="
         }
       ]
     },

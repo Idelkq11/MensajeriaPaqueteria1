@@ -29,7 +29,7 @@
                 <tr>
                     <td>@paquete.PaqueteId</td>
                     <td>@paquete.TipoPaquete</td>
-                    <td>@paquete.Peso</td>
+                    <td>@paquete.Peso.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture) lb</td>
                     <td>@paquete.EstadoPaquete</td>
                     <td>@paquete.FechaEnvio.ToString("yyyy-MM-dd")</td>
                     <td>

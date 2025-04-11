@@ -30,17 +30,13 @@ namespace MensajeriaPaqueteria.Web.Pages.Mensajeros
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        
+
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            if (Mensajero == null)
-            {
-                return NotFound();
-            }
-
-            
-            await _apiService.DeleteAsync($"Mensajero/{Mensajero.MensajeroId}");
-
+            await _apiService.DeleteAsync($"Mensajero/{id}");
             return RedirectToPage("Index");
         }
     }
 }
+

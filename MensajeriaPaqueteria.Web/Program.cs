@@ -27,12 +27,14 @@ builder.Services.AddScoped<IMensajeroRepository, MensajeroRepository>();
 builder.Services.AddScoped<IRutaRepository, RutaRepository>();
 builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();
 builder.Services.AddScoped<IEnvioRepository, EnvioRepository>();
+builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
 
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IMensajeroService, MensajeroService>();
 builder.Services.AddScoped<IRutaService, RutaService>();
 builder.Services.AddScoped<IPaqueteService, PaqueteService>();
 builder.Services.AddScoped<IEnvioService, EnvioService>();
+builder.Services.AddScoped<IUbicacionService, UbicacionService>();
 
 // Configuración de SignalR
 builder.Services.AddSignalR();
@@ -64,7 +66,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-
+app.MapHub<TrackingHub>("/trackingHub");
 app.UseHttpsRedirection();
 app.UseCookiePolicy();
 app.UseStaticFiles();

@@ -13,6 +13,7 @@ namespace MensajeriaPaqueteria.Infrastructure.Data
         public DbSet<Envio> Envios { get; set; }
         public DbSet<Mensajero>  Mensajeros { get; set; }
         public DbSet<Ruta> Rutas { get; set; }
+        public DbSet<Ubicacion> Ubicaciones { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
